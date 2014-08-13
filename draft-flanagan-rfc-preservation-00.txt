@@ -4,8 +4,8 @@
 
 Network Working Group                                        H. Flanagan
 Internet-Draft                                                RFC Editor
-Intended status: Informational                           August 07, 2014
-Expires: February 08, 2015
+Intended status: Informational                           August 13, 2014
+Expires: February 14, 2015
 
 
          Digital Preservation Considerations for the RFC Series
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on February 08, 2015.
+   This Internet-Draft will expire on February 14, 2015.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Flanagan                Expires February 08, 2015               [Page 1]
+Flanagan                Expires February 14, 2015               [Page 1]
 
 Internet-Draft                     I-D                       August 2014
 
@@ -73,13 +73,13 @@ Table of Contents
            structure and format  . . . . . . . . . . . . . . . . . .   8
        2.3.1.  "Best Effort" data retention  . . . . . . . . . . . .   9
        2.3.2.  Single format for archival purposes . . . . . . . . .  10
-       2.3.3.  Holistic archiving of the computing environment . . .  10
+       2.3.3.  Holistic archiving of the computing environment . . .  11
      2.4.  Transformation/migration to current publication formats .  11
-     2.5.  System Parameters . . . . . . . . . . . . . . . . . . . .  11
+     2.5.  System Parameters . . . . . . . . . . . . . . . . . . . .  12
      2.6.  Financial Planning  . . . . . . . . . . . . . . . . . . .  12
-   3.  Summary . . . . . . . . . . . . . . . . . . . . . . . . . . .  12
+   3.  Summary . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
    4.  Informative References  . . . . . . . . . . . . . . . . . . .  13
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  13
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  14
 
 1.  Introduction
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Flanagan                Expires February 08, 2015               [Page 2]
+Flanagan                Expires February 14, 2015               [Page 2]
 
 Internet-Draft                     I-D                       August 2014
 
@@ -148,7 +148,8 @@ Internet-Draft                     I-D                       August 2014
    provides the framework for the archival process described in this
    document was derived from the ISO Open Archival Information System
    (OAIS) Reference Model, defined in ISO 14721:2003 [HF: try to get a
-   hold of the 2012 update and use that instead].
+   hold of the 2012 update and use that instead; is ISO 14721:2012 a
+   direct copy of CCSDS 650.0-M-2?].
 
 1.1.  Terminology
 
@@ -160,16 +161,17 @@ Internet-Draft                     I-D                       August 2014
    storing and maintaining digital objects over time, ensuring that
    there is no loss or corruption of the bits making up those objects.
 
-   Content preservation: Content preservation focuses on retaining the
-   ability to read, listen, or watch a digital file in perpetuity.  It
 
 
 
-Flanagan                Expires February 08, 2015               [Page 3]
+
+Flanagan                Expires February 14, 2015               [Page 3]
 
 Internet-Draft                     I-D                       August 2014
 
 
+   Content preservation: Content preservation focuses on retaining the
+   ability to read, listen, or watch a digital file in perpetuity.  It
    is not about the bits being stored; it is about being able to access
    and present those bits to the user.
 
@@ -216,16 +218,16 @@ Internet-Draft                     I-D                       August 2014
 
 2.  Updating Policy and Procedure
 
-   RFCs are created and published as digital objects.  Unlike paper-
-   based publications, such a purely digital collection requires a focus
 
 
 
-Flanagan                Expires February 08, 2015               [Page 4]
+Flanagan                Expires February 14, 2015               [Page 4]
 
 Internet-Draft                     I-D                       August 2014
 
 
+   RFCs are created and published as digital objects.  Unlike paper-
+   based publications, such a purely digital collection requires a focus
    on the details of the technology as well as the object itself.
    Specifically, a digital archive needs to:
 
@@ -272,15 +274,15 @@ Internet-Draft                     I-D                       August 2014
 
    o  System parameters
 
-   o  Financial impact
 
 
 
-
-Flanagan                Expires February 08, 2015               [Page 5]
+Flanagan                Expires February 14, 2015               [Page 5]
 
 Internet-Draft                     I-D                       August 2014
 
+
+   o  Financial impact
 
 2.1.  Acquisition and Ingest of Documents
 
@@ -328,16 +330,16 @@ Internet-Draft                     I-D                       August 2014
    providing RFC Editor services must be able to release the archive of
    RFCs to the IETF Trust.
 
-   Note: The RFC Editor is currently only responsible for RFCs; any
-   associated data sets or other research data is not considered within
 
 
 
-Flanagan                Expires February 08, 2015               [Page 6]
+Flanagan                Expires February 14, 2015               [Page 6]
 
 Internet-Draft                     I-D                       August 2014
 
 
+   Note: The RFC Editor is currently only responsible for RFCs; any
+   associated data sets or other research data is not considered within
    the RFC Editor's mandate at this time and therefore no consideration
    to the archival requirements of such datasets is covered in this
    document.
@@ -384,15 +386,15 @@ Internet-Draft                     I-D                       August 2014
 
    o  ISSN
 
-   o  Publication date
 
 
 
-
-Flanagan                Expires February 08, 2015               [Page 7]
+Flanagan                Expires February 14, 2015               [Page 7]
 
 Internet-Draft                     I-D                       August 2014
 
+
+   o  Publication date
 
    Metadata to be added
 
@@ -431,6 +433,23 @@ Internet-Draft                     I-D                       August 2014
    plain text format and PDF format.  For exceptions to this list, see
    the RFC Online Project [RFC-ONLINE].
 
+
+
+
+
+
+
+
+
+
+
+
+
+Flanagan                Expires February 14, 2015               [Page 8]
+
+Internet-Draft                     I-D                       August 2014
+
+
    To date, all RFCs are printed out to paper and stored at time of
    publication.  This has been a reasonable backup plan for several
    decades.  With few of the features one might expect from a digital
@@ -441,14 +460,6 @@ Internet-Draft                     I-D                       August 2014
    metadata that is an intrinsic yet invisible part of the rendered
    document will be lost in such printing.  With that in mind, the focus
    needs to change on preserving the new file formats electronically.
-
-
-
-
-Flanagan                Expires February 08, 2015               [Page 8]
-
-Internet-Draft                     I-D                       August 2014
-
 
    While each RFC today is printed to paper and all electronic versions
    stored on multiple hard drives, no particular effort is made to
@@ -464,10 +475,11 @@ Internet-Draft                     I-D                       August 2014
 
    o  a content preservation model that focuses on one publication
       format as a version most likely to be viewable and provide all
-      necessary metadata in the future (a viable option as PDF/A-one of
-      the intended publication formats-was designed for this type of
-      archiving, and is considered an acceptable best practice for
-      archives with limited resources) [PDF];
+      necessary metadata in the future (a viable option considering the
+      fact that PDF/A-3-one of the intended publication formats-was
+      designed for this type of archiving, and is considered an
+      acceptable best practice for archives with limited resources)
+      [PDF];
 
    o  a complex bit stream and content preservation model that focuses
       on archiving the canonical XML and the entire computing
@@ -486,6 +498,14 @@ Internet-Draft                     I-D                       August 2014
    minimal impact on the document files being stored.  While a complete
    failure of a server migration in the past has corrupted the data set,
    that is a somewhat different problem than the tools themselves
+
+
+
+Flanagan                Expires February 14, 2015               [Page 9]
+
+Internet-Draft                     I-D                       August 2014
+
+
    changing such that plain text files are not easily read.  Given that
    the basic text format and ASCII encoding remain in common use, the
    standard protections against file corruption and data loss, such as
@@ -499,13 +519,6 @@ Internet-Draft                     I-D                       August 2014
    without backwards compatibility is fairly high when looking at a
    future of decades or centuries.
 
-
-
-Flanagan                Expires February 08, 2015               [Page 9]
-
-Internet-Draft                     I-D                       August 2014
-
-
    It is not recommended that this model of archiving the RFC Series
    continue after plain text is no longer the canonical format.
 
@@ -514,27 +527,40 @@ Internet-Draft                     I-D                       August 2014
    If one ascribes to the idea that preserving the information described
    by a document, rather than the document itself, is the primary
    purpose of an archive, then focusing efforts on a single file format
-   is a reasonable option.  Some well-supported projects follow this
-   route, such as Archivemetica https://www.archivematica.org/wiki/
-   Main_Page [1].  By selecting a feature-rich yet fundamentally stable
-   file format for documents, an organization may avoid expensive whole-
-   environment reconstruction in order to view the document.  PDF/A was
-   designed to be an archival format for electronic documents [PDF] and
-   is already one of the options intended for publication as the RFC
-   Series moves from a plain-text canonical format to an XML canonical
-   format with multiple publication formats.
+   is a reasonable option.  Some well-supported archival tooling
+   projects follow this route, such as Archivemetica https://
+   www.archivematica.org/wiki/Main_Page [1].  By selecting a feature-
+   rich yet fundamentally stable file format for documents, an
+   organization may avoid expensive whole-environment reconstruction in
+   order to view the document.  The PDF/A formats were designed to be an
+   archival format for electronic documents, and PDF/A-3 is one of the
+   options intended for publication as the RFC Series moves from a
+   plain-text canonical format to an XML canonical format with multiple
+   publication formats.  A PDF/A-3 file can be produced that includes
+   the XML document from which the PDF/A-3 file was created, which
+   allows for both original and rendered document validation-if one has
+   the correct tools available to see the source of the PDF/A-3 file
+   [draft-hansen-rfc-use-of-pdf].
 
    When looking at the need to archive RFCs in a resource-limited, a
    content preservation-only model has merit, but it is not without
-   risks.  First, PDF/A will not be the canonical format, but is
+   risks.  First, PDF/A-3 will not be the canonical format, but is
    intended to be one of the rendered outputs.  It may contain rendering
-   bugs that were not intended to be in the document.  Second, while PDF
-   /A format was designed to be archival, it has not been put to the
-   test of time to determine if will actual live up to its design goals.
+   bugs that were not intended to be in the document.  Second, while the
+   various PDF/A formats were designed to be archival, it has not been
+   put to the test of time to determine if will actual live up to its
+   design goals.
 
    It is a valid option to consider, but the risks, priorities, and
    costs must be discussed by the community before a decision is made to
    follow this path.
+
+
+
+Flanagan                Expires February 14, 2015              [Page 10]
+
+Internet-Draft                     I-D                       August 2014
+
 
 2.3.3.  Holistic archiving of the computing environment
 
@@ -550,26 +576,18 @@ Internet-Draft                     I-D                       August 2014
 
    Consider a future where XML has been obsoleted for half a century,
    HTML5 was a format used three to four human generations ago, and PDF/
-   A no longer supported by any existing company's reading software.  In
-   order for RFCs that were produced with XML as their canonical format,
-   an archive must not only hold the data, it must also hold the entire
-   computing environment that allows the data to be rendered and viewed.
-
-
-
-Flanagan                Expires February 08, 2015              [Page 10]
-
-Internet-Draft                     I-D                       August 2014
-
-
-   Operating systems and hardware on which those OSs can run, each major
-   version of each piece of software used or relied upon during the
-   publication of an RFC, browsers and readers for HTML, PDF, and any
-   other publication format, must be preserved in some fashion.  This is
-   the best practice when archiving digital documents.  It is also the
-   most expensive, and the cost only increases over time as more and
-   more instances of the computing environment must be preserved over
-   the lifetime of the Series.
+   A-3 no longer supported by any existing company's reading software.
+   In order for RFCs that were produced with XML as their canonical
+   format, an archive must not only hold the data, it must also hold the
+   entire computing environment that allows the data to be rendered and
+   viewed.  Operating systems and hardware on which those OSs can run,
+   each major version of each piece of software used or relied upon
+   during the publication of an RFC, browsers and readers for HTML, PDF,
+   and any other publication format, must be preserved in some fashion.
+   This is the best practice when archiving digital documents.  It is
+   also the most expensive, and the cost only increases over time as
+   more and more instances of the computing environment must be
+   preserved over the lifetime of the Series.
 
    This is a valid option to consider, but sheer scope of resources
    required suggests that this must be discussed by the community before
@@ -592,6 +610,14 @@ Internet-Draft                     I-D                       August 2014
    preserve the entire computing environment for an RFC, including web
    browsers and PDF readers, would be to take advantage of the non-
    canonical nature of the publication formats and re-render them from
+
+
+
+Flanagan                Expires February 14, 2015              [Page 11]
+
+Internet-Draft                     I-D                       August 2014
+
+
    the canonical source at the point that browser or reader technology
    has changed sufficiently to make RFCs largely unavailable to 'modern'
    tools.
@@ -610,14 +636,6 @@ Internet-Draft                     I-D                       August 2014
 
    While the industry best practice on the backup and restoration of
    data is not sufficient as a long-term archival solution, it is still
-
-
-
-Flanagan                Expires February 08, 2015              [Page 11]
-
-Internet-Draft                     I-D                       August 2014
-
-
    a necessary part of keeping the Series available now and into the
    future.  In the past, nearly 800 RFCs had to be manually transcribed
    from paper back to electronic format due to a failed server migration
@@ -648,6 +666,14 @@ Internet-Draft                     I-D                       August 2014
    It may be possible to reduce costs by limiting the formats the
    repository will accept, or transforming material into a standard
    common format.  This can be done to reduce the number of file types
+
+
+
+Flanagan                Expires February 14, 2015              [Page 12]
+
+Internet-Draft                     I-D                       August 2014
+
+
    and possibly reducing the storage size.  However, it is also
    necessary to realise that due to storage redundancies required for
    back up each gigabyte of deposited data requires more than one
@@ -666,14 +692,6 @@ Internet-Draft                     I-D                       August 2014
    early Internet, as well as some of the key standards for Internet
    technology and best practice today.  Who knows what the community
    will create in the future?  There are many ways to preserve the
-
-
-
-Flanagan                Expires February 08, 2015              [Page 12]
-
-Internet-Draft                     I-D                       August 2014
-
-
    Series, from relying on preservation of the bits, to focusing on a
    single file format, to preserving the entire computing environment.
    Each possibility, or the permutations from them, involves risks and
@@ -683,6 +701,11 @@ Internet-Draft                     I-D                       August 2014
    see supported far into the future.
 
 4.  Informative References
+
+   [draft-hansen-rfc-use-of-pdf]
+              Hansen, T., Masinter, L., and M. Hardy, "PDF for an RFC
+              Series Output Document Format", draft-hansen-rfc-use-of-
+              pdf-02 , July 2014.
 
    [LIFE]     Hole, B., "LIFE^3: Predictive Costing of Digital
               Preservation", July 2010,
@@ -699,6 +722,14 @@ Internet-Draft                     I-D                       August 2014
               History", n.d., <http://www.rfc-editor.org/history.html>.
 
    [RFC-ONLINE]
+
+
+
+Flanagan                Expires February 14, 2015              [Page 13]
+
+Internet-Draft                     I-D                       August 2014
+
+
               RFC Editor, "History of RFC Online Project", n.d.,
               <http://www.rfc-editor.org/rfc-online-2000.html>.
 
@@ -721,14 +752,6 @@ Internet-Draft                     I-D                       August 2014
               Requirements and Future Development", RFC 6949, May 2013.
 
 Author's Address
-
-
-
-
-Flanagan                Expires February 08, 2015              [Page 13]
-
-Internet-Draft                     I-D                       August 2014
-
 
    Heather Flanagan
    RFC Editor
@@ -758,28 +781,5 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Flanagan                Expires February 08, 2015              [Page 14]
+Flanagan                Expires February 14, 2015              [Page 14]
 

@@ -2,7 +2,7 @@
 title: Digital Preservation Considerations for the RFC Series
 abbrev: I-D
 docname: draft-flanagan-rfc-preservation-00
-date: 2014-08-07
+date: 2014-08-13
 category: info
 ipr: trust200902
 pi:
@@ -16,6 +16,20 @@ author:
     email: rse@rfc-editor.og
 
 informative:
+  draft-hansen-rfc-use-of-pdf:
+    title: "PDF for an RFC Series Output Document Format"
+    author:
+      -
+        ins: T. Hansen
+        name: Tony Hansen
+      -
+        ins: L. Masinter
+        name: Larry Masinter
+      -
+        ins: M. Hardy
+        name: Matthew Hardy
+    date: July 2014
+    seriesinfo: draft-hansen-rfc-use-of-pdf-02
   LIFE:
     title: "LIFE^3: Predictive Costing of Digital Preservation"
     author: 
@@ -83,7 +97,7 @@ To summarize, the key areas of tension between the roles of publisher and archiv
 
 Through most of the history of the RFC Series, the file format for RFCs has been plain text with an ASCII-only character set.  This choice offered the simplest format likely to remain available to the largest number of consumers, and the one most likely to be resistant to changes in technology over time.  Increasingly, however, consumers and authors are requesting additional features that would allow for easy reading on a wider array of devices and retain all the metadata an author intended in their document.  In 2013, RFC 6949, "RFC Series Format Requirements and Future Development," captured the high level requirements for the Series; the fundamental issue being that the plain text, ASCII-only documents no longer met the needs of the communities interested in using and producing RFCs {{RFC6949}}.
 
-The assertion that plain text, ASCII-only documents no longer meet the needs of the community in turn suggests that the simple archive process maintained by the RFC Editor is also no longer sufficient.  More complex tools and file formats require a more complex process to make sure that RFCs can still be read and rendered far into the future.  This document describes the considerations that must inform any changes in policy and procedure.  The functional model that provides the framework for the archival process described in this document was derived from the ISO Open Archival Information System (OAIS) Reference Model, defined in ISO 14721:2003 [HF: try to get a hold of the 2012 update and use that instead].
+The assertion that plain text, ASCII-only documents no longer meet the needs of the community in turn suggests that the simple archive process maintained by the RFC Editor is also no longer sufficient.  More complex tools and file formats require a more complex process to make sure that RFCs can still be read and rendered far into the future.  This document describes the considerations that must inform any changes in policy and procedure.  The functional model that provides the framework for the archival process described in this document was derived from the ISO Open Archival Information System (OAIS) Reference Model, defined in ISO 14721:2003 [HF: try to get a hold of the 2012 update and use that instead; is ISO 14721:2012 a direct copy of CCSDS 650.0-M-2?].
 
 ## Terminology
 
@@ -222,7 +236,7 @@ While each RFC today is printed to paper and all electronic versions stored on m
 
  * a simplified bit stream preservation model that focuses on "best effort" standard data retention practices, which rely on backups and regular equipment change to preserve the data, and assuming that emulators may be built when needed if the formats used go out of common use (essentially the existing model);
 
- * a content preservation model that focuses on one publication format as a version most likely to be viewable and provide all necessary metadata in the future (a viable option as PDF/A--one of the intended publication formats--was designed for this type of archiving, and is considered an acceptable best practice for archives with limited resources) {{PDF}};
+ * a content preservation model that focuses on one publication format as a version most likely to be viewable and provide all necessary metadata in the future (a viable option considering the fact that PDF/A-3--one of the intended publication formats--was designed for this type of archiving, and is considered an acceptable best practice for archives with limited resources) {{PDF}};
 
  * a complex bit stream and content preservation model that focuses on archiving the canonical XML and the entire computing environment required to create, view and render all outputs from that file (the "best practice" when looking at this from an archivist's perspective).
 
@@ -236,9 +250,9 @@ It is not recommended that this model of archiving the RFC Series continue after
 
 ### Single format for archival purposes
 
-If one ascribes to the idea that preserving the information described by a document, rather than the document itself, is the primary purpose of an archive, then focusing efforts on a single file format is a reasonable option.  Some well-supported projects follow this route, such as Archivemetica <https://www.archivematica.org/wiki/Main_Page>.  By selecting a feature-rich yet fundamentally stable file format for documents, an organization may avoid expensive whole-environment reconstruction in order to view the document.  PDF/A was designed to be an archival format for electronic documents [PDF] and is already one of the options intended for publication as the RFC Series moves from a plain-text canonical format to an XML canonical format with multiple publication formats.
+If one ascribes to the idea that preserving the information described by a document, rather than the document itself, is the primary purpose of an archive, then focusing efforts on a single file format is a reasonable option.  Some well-supported archival tooling projects follow this route, such as Archivemetica <https://www.archivematica.org/wiki/Main_Page>.  By selecting a feature-rich yet fundamentally stable file format for documents, an organization may avoid expensive whole-environment reconstruction in order to view the document.  The PDF/A formats were designed to be an archival format for electronic documents, and PDF/A-3 is one of the options intended for publication as the RFC Series moves from a plain-text canonical format to an XML canonical format with multiple publication formats.  A PDF/A-3 file can be produced that includes the XML document from which the PDF/A-3 file was created, which allows for both original and rendered document validation--if one has the correct tools available to see the source of the PDF/A-3 file {{draft-hansen-rfc-use-of-pdf}}.
 
-When looking at the need to archive RFCs in a resource-limited, a content preservation-only model has merit, but it is not without risks.  First, PDF/A will not be the canonical format, but is intended to be one of the rendered outputs.  It may contain rendering bugs that were not intended to be in the document.  Second, while PDF/A format was designed to be archival, it has not been put to the test of time to determine if will actual live up to its design goals.
+When looking at the need to archive RFCs in a resource-limited, a content preservation-only model has merit, but it is not without risks.  First, PDF/A-3 will not be the canonical format, but is intended to be one of the rendered outputs.  It may contain rendering bugs that were not intended to be in the document.  Second, while the various PDF/A formats were designed to be archival, it has not been put to the test of time to determine if will actual live up to its design goals.
 
 It is a valid option to consider, but the risks, priorities, and costs must be discussed by the community before a decision is made to follow this path.
 
@@ -246,7 +260,7 @@ It is a valid option to consider, but the risks, priorities, and costs must be d
 
 Preserving everything published through the RFC Editor in order to have a permanent record of information, standards, and best practice, is arguably the whole point of being an archival series.  One can argue that it is not only about the information described in an RFC, it is also about supporting Intellectual Property Rights (IPR) and retaining the history of the Internet.  In following this model, however, one must consider the complexity of the archival environment as matching, and possibly exceeding, the complexity of the file formats being preserved.
 
-Consider a future where XML has been obsoleted for half a century, HTML5 was a format used three to four human generations ago, and PDF/A no longer supported by any existing company's reading software.   In order for RFCs that were produced with XML as their canonical format, an archive must not only hold the data, it must also hold the entire computing environment that allows the data to be rendered and viewed.  Operating systems and hardware on which those OSs can run, each major version of each piece of software used or relied upon during the publication of an RFC, browsers and readers for HTML, PDF, and any other publication format, must be preserved in some fashion.  This is the best practice when archiving digital documents.  It is also the most expensive, and the cost only increases over time as more and more instances of the computing environment must be preserved over the lifetime of the Series.
+Consider a future where XML has been obsoleted for half a century, HTML5 was a format used three to four human generations ago, and PDF/A-3 no longer supported by any existing company's reading software.   In order for RFCs that were produced with XML as their canonical format, an archive must not only hold the data, it must also hold the entire computing environment that allows the data to be rendered and viewed.  Operating systems and hardware on which those OSs can run, each major version of each piece of software used or relied upon during the publication of an RFC, browsers and readers for HTML, PDF, and any other publication format, must be preserved in some fashion.  This is the best practice when archiving digital documents.  It is also the most expensive, and the cost only increases over time as more and more instances of the computing environment must be preserved over the lifetime of the Series.
 
 This is a valid option to consider, but sheer scope of resources required suggests that this must be discussed by the community before a decision is made.  Pursuing this may require an entirely different paradigm for the RFC Editor than what has been considered in the past; expanding the scope and resources for the RFC Editor, finding a third-party to take over the responsibilities of archiving, or some other option may be necessary.
 
