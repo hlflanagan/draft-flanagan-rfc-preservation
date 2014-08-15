@@ -4,8 +4,8 @@
 
 Network Working Group                                        H. Flanagan
 Internet-Draft                                                RFC Editor
-Intended status: Informational                           August 13, 2014
-Expires: February 14, 2015
+Intended status: Informational                           August 15, 2014
+Expires: February 16, 2015
 
 
          Digital Preservation Considerations for the RFC Series
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on February 14, 2015.
+   This Internet-Draft will expire on February 16, 2015.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Flanagan                Expires February 14, 2015               [Page 1]
+Flanagan                Expires February 16, 2015               [Page 1]
 
 Internet-Draft                     I-D                       August 2014
 
@@ -66,17 +66,18 @@ Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
      1.1.  Terminology . . . . . . . . . . . . . . . . . . . . . . .   3
      1.2.  Life cycle of Digital Preservation  . . . . . . . . . . .   4
-   2.  Updating Policy and Procedure . . . . . . . . . . . . . . . .   4
-     2.1.  Acquisition and Ingest of Documents . . . . . . . . . . .   6
-     2.2.  Metadata and document registration  . . . . . . . . . . .   7
-     2.3.  Normalization and standardization of canonical file
+   2.  Updating Policy and Procedure . . . . . . . . . . . . . . . .   5
+     2.1.  Acquisition of Documents  . . . . . . . . . . . . . . . .   6
+     2.2.  Ingest of Documents . . . . . . . . . . . . . . . . . . .   6
+     2.3.  Metadata and document registration  . . . . . . . . . . .   7
+     2.4.  Normalization and standardization of canonical file
            structure and format  . . . . . . . . . . . . . . . . . .   8
-       2.3.1.  "Best Effort" data retention  . . . . . . . . . . . .   9
-       2.3.2.  Single format for archival purposes . . . . . . . . .  10
-       2.3.3.  Holistic archiving of the computing environment . . .  11
-     2.4.  Transformation/migration to current publication formats .  11
-     2.5.  System Parameters . . . . . . . . . . . . . . . . . . . .  12
-     2.6.  Financial Planning  . . . . . . . . . . . . . . . . . . .  12
+       2.4.1.  "Best Effort" data retention  . . . . . . . . . . . .   9
+       2.4.2.  Single format for archival purposes . . . . . . . . .  10
+       2.4.3.  Holistic archiving of the computing environment . . .  11
+     2.5.  Transformation/migration to current publication formats .  11
+     2.6.  System Parameters . . . . . . . . . . . . . . . . . . . .  12
+     2.7.  Financial Planning  . . . . . . . . . . . . . . . . . . .  12
    3.  Summary . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
    4.  Informative References  . . . . . . . . . . . . . . . . . . .  13
    Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  14
@@ -103,19 +104,16 @@ Table of Contents
    To summarize, the key areas of tension between the roles of publisher
    and archivist are:
 
+   o  the desire of the publisher to use the latest technology within
+      their documents, such as vector graphics, live links, and a rich
 
 
 
-
-
-
-Flanagan                Expires February 14, 2015               [Page 2]
+Flanagan                Expires February 16, 2015               [Page 2]
 
 Internet-Draft                     I-D                       August 2014
 
 
-   o  the desire of the publisher to use the latest technology within
-      their documents, such as vector graphics, live links, and a rich
       set of metadata, in order to meet the demands of today's authors
       and readers;
 
@@ -153,27 +151,29 @@ Internet-Draft                     I-D                       August 2014
 
 1.1.  Terminology
 
-   Acquisition and Ingest: The process by which a digital object or
-   metadata package is absorbed by a different system than the one that
-   produced it.
+   Acquisition: The point at which a document is accepted by the
+   archivist for future inclusion into the archive.
 
-   Bit stream preservation: Bit-stream Preservation is the process of
-   storing and maintaining digital objects over time, ensuring that
-   there is no loss or corruption of the bits making up those objects.
+   Ingest: The point at which a digital object is assigned all necessary
+   metadata to describe the object and it's contents, and added to the
+   archive.
+
+   Bit stream preservation: The process of storing and maintaining
+   digital objects over time, ensuring that there is no loss or
+   corruption of the bits making up those objects.
 
 
 
 
-
-Flanagan                Expires February 14, 2015               [Page 3]
+Flanagan                Expires February 16, 2015               [Page 3]
 
 Internet-Draft                     I-D                       August 2014
 
 
-   Content preservation: Content preservation focuses on retaining the
-   ability to read, listen, or watch a digital file in perpetuity.  It
-   is not about the bits being stored; it is about being able to access
-   and present those bits to the user.
+   Content preservation: The retention of the ability to read, listen,
+   or watch a digital file in perpetuity.  It is not about the bits
+   being stored; it is about being able to access and present those bits
+   to the user.
 
 1.2.  Life cycle of Digital Preservation
 
@@ -190,12 +190,16 @@ Internet-Draft                     I-D                       August 2014
    environment that experiences rapid changes in technology.
 
    For most of the existence of the RFC Series, the digital preservation
+   process has been fairly simple, focusing on bit stream preservation
+   and paper copies of digital files.
 
    1.  Acquisition/Ingest: The Datatracker is updated to indicate a
        document has been approved for publication.  Much of the metadata
        associated with an RFC is recorded while the document is an
-       Internet-Draft and recorded in the Datatracker.  The RFC itself
-       is formally acquired at time of publication by the RFC Editor.
+       Internet-Draft and recorded in the Datatracker, though the
+       metadata may change at any point up until an I-D is published as
+       an RFC.  The RFC itself is formally acquired at time of
+       publication by the RFC Editor.
 
    2.  Metadata creation: Details regarding an RFC, including RFC
        number, author, title, abstract, etc., are created at time of
@@ -212,19 +216,21 @@ Internet-Draft                     I-D                       August 2014
        backups with no particular focus on preserving the entire
        computing environment used to create the electronic documents.
 
-   When the format for RFCs changes archival process overall will become
-   significantly more complex.  Additional metadata and possibly the
-   entire computing environment may need to be added to the archive.
-
-2.  Updating Policy and Procedure
 
 
 
 
-Flanagan                Expires February 14, 2015               [Page 4]
+
+Flanagan                Expires February 16, 2015               [Page 4]
 
 Internet-Draft                     I-D                       August 2014
 
+
+   When the format for RFCs changes, the archival process overall will
+   become significantly more complex.  Additional metadata and possibly
+   the entire computing environment may need to be added to the archive.
+
+2.  Updating Policy and Procedure
 
    RFCs are created and published as digital objects.  Unlike paper-
    based publications, such a purely digital collection requires a focus
@@ -261,9 +267,20 @@ Internet-Draft                     I-D                       August 2014
    may fit the needs of the Series, and raises several points for
    community consideration.  Specifically, it covers information on:
 
-   o  Acquisition and ingest of documents
+   o  Acquisition of documents
+
+   o  Ingest of documents
 
    o  Metadata and document registration
+
+
+
+
+
+Flanagan                Expires February 16, 2015               [Page 5]
+
+Internet-Draft                     I-D                       August 2014
+
 
    o  Normalization and standardization of canonical file structure and
       format
@@ -274,27 +291,25 @@ Internet-Draft                     I-D                       August 2014
 
    o  System parameters
 
-
-
-
-Flanagan                Expires February 14, 2015               [Page 5]
-
-Internet-Draft                     I-D                       August 2014
-
-
    o  Financial impact
 
-2.1.  Acquisition and Ingest of Documents
+2.1.  Acquisition of Documents
 
-   The acquisition and ingest phase of the archival life cycle involves
-   accepting items for the archive.  At this point, the documents are
-   assigned the metadata an archivist needs to identify the unique
-   object.  Since the publisher and archivist role are performed by the
-   same entity, the acquisition phase and the instant of publication are
-   the same.
+   The acquisition process for RFCs starts with the submission of an I-D
+   for publication.  During the editorial process, information such as
+   the document metadata are finalized prior to publication.  The
+   document does not formally enter the archive, however, until the
+   point of publication, which is considered the point of ingest from an
+   archival perspective.
 
-   In the case of RFCs, certain metadata is assigned to a document at
-   the time of publication includes:
+2.2.  Ingest of Documents
+
+   When an RFC is published, the canonical format is considered
+   immutable.  At this point, the documents are assigned the metadata an
+   archivist needs to identify the unique object.
+
+   In the case of RFCs, the metadata is assigned to a document at the
+   time of publication includes:
 
    o  the RFC number
 
@@ -314,6 +329,15 @@ Internet-Draft                     I-D                       August 2014
    signed.  Information regarding the signatures and how to verify them
    must be made available on the RFC Editor website.
 
+
+
+
+
+Flanagan                Expires February 16, 2015               [Page 6]
+
+Internet-Draft                     I-D                       August 2014
+
+
    In terms of deciding what to accept in the archive-a major question
    for most archives, and yet simple for the RFC Series-the RFC Editor
    accepts documents that are approved for publication by the stream
@@ -330,26 +354,18 @@ Internet-Draft                     I-D                       August 2014
    providing RFC Editor services must be able to release the archive of
    RFCs to the IETF Trust.
 
-
-
-
-Flanagan                Expires February 14, 2015               [Page 6]
-
-Internet-Draft                     I-D                       August 2014
-
-
    Note: The RFC Editor is currently only responsible for RFCs; any
    associated data sets or other research data is not considered within
    the RFC Editor's mandate at this time and therefore no consideration
    to the archival requirements of such datasets is covered in this
    document.
 
-2.2.  Metadata and document registration
+2.3.  Metadata and document registration
 
    Metadata is data about data.  In the field of digital archiving, this
    is the data that clearly identifies every aspect of a document, from
-   its identifier (i.e., the RFC) to the size and file format of the
-   document and more.  Metadata is stored in a central registry that
+   its identifier (i.e., the RFC number) to the size and file format of
+   the document and more.  Metadata is stored in a central registry that
    stores information on what exactly is being preserved, where it is
    located, information on authenticity and provenance, and details on
    the hardware and/or software needed to view or create the documents.
@@ -370,6 +386,14 @@ Internet-Draft                     I-D                       August 2014
 
    o  Status
 
+
+
+
+Flanagan                Expires February 16, 2015               [Page 7]
+
+Internet-Draft                     I-D                       August 2014
+
+
    o  Updates
 
    o  Authors
@@ -382,17 +406,7 @@ Internet-Draft                     I-D                       August 2014
 
    o  Character Set
 
-   o  Type
-
    o  ISSN
-
-
-
-
-Flanagan                Expires February 14, 2015               [Page 7]
-
-Internet-Draft                     I-D                       August 2014
-
 
    o  Publication date
 
@@ -415,7 +429,7 @@ Internet-Draft                     I-D                       August 2014
    of online documents, with a goal of buffering against URI and online
    availability changes.
 
-2.3.  Normalization and standardization of canonical file structure and
+2.4.  Normalization and standardization of canonical file structure and
       format
 
    The normalization process is perhaps the most technically critical
@@ -427,28 +441,20 @@ Internet-Draft                     I-D                       August 2014
    Normalization is about enabling long-term access to the information
    within a document.
 
+
+
+
+
+Flanagan                Expires February 16, 2015               [Page 8]
+
+Internet-Draft                     I-D                       August 2014
+
+
    Over the history of the RFC Series, documents have been submitted for
    publication in a variety of formats, including paper in the earliest
    RFCs.  Today, the majority of RFCs are available in both a canonical
    plain text format and PDF format.  For exceptions to this list, see
    the RFC Online Project [RFC-ONLINE].
-
-
-
-
-
-
-
-
-
-
-
-
-
-Flanagan                Expires February 14, 2015               [Page 8]
-
-Internet-Draft                     I-D                       August 2014
-
 
    To date, all RFCs are printed out to paper and stored at time of
    publication.  This has been a reasonable backup plan for several
@@ -464,8 +470,8 @@ Internet-Draft                     I-D                       August 2014
    While each RFC today is printed to paper and all electronic versions
    stored on multiple hard drives, no particular effort is made to
    ensure copies of the software used to render or read the canonical
-   plain text RFC.  The RFC Editor has several choices on how to adapt
-   to a more complex set of data to archive:
+   plain text RFC are also archived.  The RFC Editor has several choices
+   on how to adapt to a more complex set of data to archive:
 
    o  a simplified bit stream preservation model that focuses on "best
       effort" standard data retention practices, which rely on backups
@@ -490,39 +496,39 @@ Internet-Draft                     I-D                       August 2014
    Those options are listed in order of least to greatest complexity and
    expense.  More detail on each option is described below.
 
-2.3.1.  "Best Effort" data retention
+2.4.1.  "Best Effort" data retention
+
+
+
+
+Flanagan                Expires February 16, 2015               [Page 9]
+
+Internet-Draft                     I-D                       August 2014
+
 
    When dealing with very simple data structures such as plain text,
    ASCII-only files, the experience of the RFC Series suggests that for
    the last few decades, hardware and operating system changes have had
    minimal impact on the document files being stored.  While a complete
-   failure of a server migration in the past has corrupted the data set,
-   that is a somewhat different problem than the tools themselves
-
-
-
-Flanagan                Expires February 14, 2015               [Page 9]
-
-Internet-Draft                     I-D                       August 2014
-
-
-   changing such that plain text files are not easily read.  Given that
-   the basic text format and ASCII encoding remain in common use, the
-   standard protections against file corruption and data loss, such as
-   disk mirroring, off-site backups, and periodic restore testing will
-   continue to provide access for the foreseeable future.  As has been
-   pointed out, both in this document and in broader community
-   discussion, that is not sufficient when one moves into more complex
-   formats such as XML, HTML, PDF, or other proprietary formats offered
-   by today's large IT companies.  The risk of technological change
-   resulting in the file formats mentioned being deprecated or changed
-   without backwards compatibility is fairly high when looking at a
-   future of decades or centuries.
+   failure of a server migration in the past had corrupted the data set,
+   that situation represents a somewhat different problem than the tools
+   themselves changing such that plain text files are not easily read.
+   Given that the basic text format and ASCII encoding remain in common
+   use, the standard protections against file corruption and data loss,
+   such as disk mirroring, off-site backups, and periodic restore
+   testing will continue to provide access for the foreseeable future.
+   As has been pointed out, both in this document and in broader
+   community discussion, that is not sufficient when one moves into more
+   complex formats such as XML, HTML, PDF, or other proprietary formats
+   offered by today's large IT companies.  The risk of technological
+   change resulting in the file formats mentioned being deprecated or
+   changed without backwards compatibility is fairly high when looking
+   at a future of decades or centuries.
 
    It is not recommended that this model of archiving the RFC Series
    continue after plain text is no longer the canonical format.
 
-2.3.2.  Single format for archival purposes
+2.4.2.  Single format for archival purposes
 
    If one ascribes to the idea that preserving the information described
    by a document, rather than the document itself, is the primary
@@ -548,6 +554,14 @@ Internet-Draft                     I-D                       August 2014
    intended to be one of the rendered outputs.  It may contain rendering
    bugs that were not intended to be in the document.  Second, while the
    various PDF/A formats were designed to be archival, it has not been
+
+
+
+Flanagan                Expires February 16, 2015              [Page 10]
+
+Internet-Draft                     I-D                       August 2014
+
+
    put to the test of time to determine if will actual live up to its
    design goals.
 
@@ -555,14 +569,7 @@ Internet-Draft                     I-D                       August 2014
    costs must be discussed by the community before a decision is made to
    follow this path.
 
-
-
-Flanagan                Expires February 14, 2015              [Page 10]
-
-Internet-Draft                     I-D                       August 2014
-
-
-2.3.3.  Holistic archiving of the computing environment
+2.4.3.  Holistic archiving of the computing environment
 
    Preserving everything published through the RFC Editor in order to
    have a permanent record of information, standards, and best practice,
@@ -597,11 +604,19 @@ Internet-Draft                     I-D                       August 2014
    third-party to take over the responsibilities of archiving, or some
    other option may be necessary.
 
-2.4.  Transformation/migration to current publication formats
+2.5.  Transformation/migration to current publication formats
 
    Noting that normalization is a complex subject, it is important to
    consider what to do to mitigate the risk of failure of the
    normalization process.
+
+
+
+
+Flanagan                Expires February 16, 2015              [Page 11]
+
+Internet-Draft                     I-D                       August 2014
+
 
    The RFC Editor is responsible for making RFCs available to the
    Internet community.  The canonical version of an RFC does not change
@@ -610,14 +625,6 @@ Internet-Draft                     I-D                       August 2014
    preserve the entire computing environment for an RFC, including web
    browsers and PDF readers, would be to take advantage of the non-
    canonical nature of the publication formats and re-render them from
-
-
-
-Flanagan                Expires February 14, 2015              [Page 11]
-
-Internet-Draft                     I-D                       August 2014
-
-
    the canonical source at the point that browser or reader technology
    has changed sufficiently to make RFCs largely unavailable to 'modern'
    tools.
@@ -632,7 +639,7 @@ Internet-Draft                     I-D                       August 2014
    community, and whether any should be retired or added to improve the
    availability of information to the community at that time.
 
-2.5.  System Parameters
+2.6.  System Parameters
 
    While the industry best practice on the backup and restoration of
    data is not sufficient as a long-term archival solution, it is still
@@ -650,7 +657,7 @@ Internet-Draft                     I-D                       August 2014
    cycle for the physical storage and backup media and describe a
    regular cycle of data restoration and/or migration testing.
 
-2.6.  Financial Planning
+2.7.  Financial Planning
 
    Having a digital archive policy provides input into the budget
    process.  The main costs associated with digital archives come from
@@ -658,28 +665,29 @@ Internet-Draft                     I-D                       August 2014
    described in the section on Normalization.  To quote the Digital
    Protection Conservancy Handbook:
 
-   "The complexity of the material submitted and number of objects
-   acquired generally has more impact on costs than the total storage
-   size.  The type and variety of formats accepted into the repository
-   will also affect cost, because for example proprietary formats are
-   likely to be more difficult and expensive to manage in the long term.
-   It may be possible to reduce costs by limiting the formats the
-   repository will accept, or transforming material into a standard
-   common format.  This can be done to reduce the number of file types
 
 
 
-Flanagan                Expires February 14, 2015              [Page 12]
+
+Flanagan                Expires February 16, 2015              [Page 12]
 
 Internet-Draft                     I-D                       August 2014
 
 
-   and possibly reducing the storage size.  However, it is also
-   necessary to realise that due to storage redundancies required for
-   back up each gigabyte of deposited data requires more than one
-   gigabyte of disk space in repository storage." -http://
-   www.dpconline.org/advice/preservationhandbook/institutional-
-   strategies/costs-and-business-modelling
+      The complexity of the material submitted and number of objects
+      acquired generally has more impact on costs than the total storage
+      size.  The type and variety of formats accepted into the
+      repository will also affect cost, because for example proprietary
+      formats are likely to be more difficult and expensive to manage in
+      the long term.  It may be possible to reduce costs by limiting the
+      formats the repository will accept, or transforming material into
+      a standard common format.  This can be done to reduce the number
+      of file types and possibly reducing the storage size.  However, it
+      is also necessary to realise that due to storage redundancies
+      required for back up each gigabyte of deposited data requires more
+      than one gigabyte of disk space in repository storage." -http://
+      www.dpconline.org/advice/preservationhandbook/institutional-
+      strategies/costs-and-business-modelling
 
    Estimating potential costs and providing figures it outside of the
    scope of this document, but it should be noted that costs are a major
@@ -715,6 +723,13 @@ Internet-Draft                     I-D                       August 2014
               preservation -- Part 3: Use of ISO 32000-1 with support
               for embedded files (PDF/A-3)"", ISO 19005-3 , 2012.
 
+
+
+Flanagan                Expires February 16, 2015              [Page 13]
+
+Internet-Draft                     I-D                       August 2014
+
+
    [PERMACC]  , "Perma.CC", n.d., <http://perma.cc/>.
 
    [RFC-HISTORY]
@@ -722,14 +737,6 @@ Internet-Draft                     I-D                       August 2014
               History", n.d., <http://www.rfc-editor.org/history.html>.
 
    [RFC-ONLINE]
-
-
-
-Flanagan                Expires February 14, 2015              [Page 13]
-
-Internet-Draft                     I-D                       August 2014
-
-
               RFC Editor, "History of RFC Online Project", n.d.,
               <http://www.rfc-editor.org/rfc-online-2000.html>.
 
@@ -774,12 +781,5 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-Flanagan                Expires February 14, 2015              [Page 14]
+Flanagan                Expires February 16, 2015              [Page 14]
 

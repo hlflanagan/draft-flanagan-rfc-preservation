@@ -2,7 +2,7 @@
 title: Digital Preservation Considerations for the RFC Series
 abbrev: I-D
 docname: draft-flanagan-rfc-preservation-00
-date: 2014-08-13
+date: 2014-08-15
 category: info
 ipr: trust200902
 pi:
@@ -101,19 +101,21 @@ The assertion that plain text, ASCII-only documents no longer meet the needs of 
 
 ## Terminology
 
-Acquisition and Ingest: The process by which a digital object or metadata package is absorbed by a different system than the one that produced it.
+Acquisition: The point at which a document is accepted by the archivist for future inclusion into the archive. 
 
-Bit stream preservation: Bit-stream Preservation is the process of storing and maintaining digital objects over time, ensuring that there is no loss or corruption of the bits making up those objects. 
+Ingest: The point at which a digital object is assigned all necessary metadata to describe the object and it's contents, and added to the archive.
 
-Content preservation: Content preservation focuses on retaining the ability to read, listen, or watch a digital file in perpetuity.  It is not about the bits being stored; it is about being able to access and present those bits to the user.
+Bit stream preservation: The process of storing and maintaining digital objects over time, ensuring that there is no loss or corruption of the bits making up those objects. 
+
+Content preservation: The retention of the ability to read, listen, or watch a digital file in perpetuity.  It is not about the bits being stored; it is about being able to access and present those bits to the user.
 
 ## Life cycle of Digital Preservation
 
 The basic process for preserving digital information has been described by a variety of organizations.  From the Life cycle Information For E-Literature (LIFE) project , to the ongoing digital preservation work in the U.S. Library of Congress, the basic digital preservation process is straightforward {{LIFE}} {{USLOC}}.  Documents are acquired and processed, metadata is recorded, physical media is refreshed, and content is regularly checked to see if it is still accessible by interested parties.  The complexities arise when one considers the need to preserve both the bits of the digital objects themselves and the tools with which to express those bits in an environment that experiences rapid changes in technology.
 
-For most of the existence of the RFC Series, the digital preservation  
+For most of the existence of the RFC Series, the digital preservation process has been fairly simple, focusing on bit stream preservation and paper copies of digital files. 
 
- 1. Acquisition/Ingest: The Datatracker is updated to indicate a document has been approved for publication.  Much of the metadata associated with an RFC is recorded while the document is an Internet-Draft and recorded in the Datatracker.  The RFC itself is formally acquired at time of publication by the RFC Editor. 
+ 1. Acquisition/Ingest: The Datatracker is updated to indicate a document has been approved for publication.  Much of the metadata associated with an RFC is recorded while the document is an Internet-Draft and recorded in the Datatracker, though the metadata may change at any point up until an I-D is published as an RFC.  The RFC itself is formally acquired at time of publication by the RFC Editor. 
  
  2. Metadata creation: Details regarding an RFC, including RFC number, author, title, abstract, etc., are created at time of publication.  Additional metadata in the form of status, IPR, and errata can be added or changed at any time, following the process of the originating document stream.
 
@@ -121,7 +123,7 @@ For most of the existence of the RFC Series, the digital preservation
 
  4. Content preservation:  All RFCs are printed out on paper at time of publication, and the electronic files preserved on disk and in backups with no particular focus on preserving the entire computing environment used to create the electronic documents.
 
-When the format for RFCs changes archival process overall will become significantly more complex.  Additional metadata and possibly the entire computing environment may need to be added to the archive.
+When the format for RFCs changes, the archival process overall will become significantly more complex.  Additional metadata and possibly the entire computing environment may need to be added to the archive.
 
 # Updating Policy and Procedure
 
@@ -143,7 +145,9 @@ The RFC Editor has several advantages in acting as the digital archivist for the
 
 This document describes several different preservation models that may fit the needs of the Series, and raises several points for community consideration.  Specifically, it covers information on:
 
- * Acquisition and ingest of documents
+ * Acquisition of documents
+
+ * Ingest of documents
 
  * Metadata and document registration
 
@@ -157,10 +161,13 @@ This document describes several different preservation models that may fit the n
 
  * Financial impact
 
-## Acquisition and Ingest of Documents
-The acquisition and ingest phase of the archival life cycle involves accepting items for the archive.  At this point, the documents are assigned the metadata an archivist needs to identify the unique object.  Since the publisher and archivist role are performed by the same entity, the acquisition phase and the instant of publication are the same. 
+## Acquisition of Documents
+The acquisition process for RFCs starts with the submission of an I-D for publication.  During the editorial process, information such as the document metadata are finalized prior to publication.  The document does not formally enter the archive, however, until the point of publication, which is considered the point of ingest from an archival perspective.
 
-In the case of RFCs, certain metadata is assigned to a document at the time of publication includes:
+## Ingest of Documents
+When an RFC is published, the canonical format is considered immutable.  At this point, the documents are assigned the metadata an archivist needs to identify the unique object.
+
+In the case of RFCs, the metadata is assigned to a document at the time of publication includes:
 
  * the RFC number
 
@@ -182,7 +189,7 @@ Note: The RFC Editor is currently only responsible for RFCs; any associated data
 
 ## Metadata and document registration
 
-Metadata is data about data.  In the field of digital archiving, this is the data that clearly identifies every aspect of a document, from its identifier (i.e., the RFC) to the size and file format of the document and more.  Metadata is stored in a central registry that stores information on what exactly is being preserved, where it is located, information on authenticity and provenance, and details on the hardware and/or software needed to view or create the documents. 
+Metadata is data about data.  In the field of digital archiving, this is the data that clearly identifies every aspect of a document, from its identifier (i.e., the RFC number) to the size and file format of the document and more.  Metadata is stored in a central registry that stores information on what exactly is being preserved, where it is located, information on authenticity and provenance, and details on the hardware and/or software needed to view or create the documents. 
 
 The RFC Editor maintains this registry in the form of a database that includes all metadata available for an RFC.  This database feeds the search engine on the RFC Editor website and the Info Pages available for every RFC (e.g., http://www.rfc-editor.org/info/rfc####) and has a bi-directional data flow for information with the IETF Datatracker.
 
@@ -208,8 +215,6 @@ Current list of metadata presented in the RFC Info pages
 
  * Character Set
 
- * Type
-
  * ISSN
 
  * Publication date
@@ -232,7 +237,7 @@ Over the history of the RFC Series, documents have been submitted for publicatio
 
 To date, all RFCs are printed out to paper and stored at time of publication.  This has been a reasonable backup plan for several decades.  With few of the features one might expect from a digital document format (including links, metadata within the document, or line drawings), plain text files do not lose much if any information when printed out to paper.  As the published formats change (see RFC 6949), however, printing to paper provides less value as much of the metadata that is an intrinsic yet invisible part of the rendered document will be lost in such printing.  With that in mind, the focus needs to change on preserving the new file formats electronically.
 
-While each RFC today is printed to paper and all electronic versions stored on multiple hard drives, no particular effort is made to ensure copies of the software used to render or read the canonical plain text RFC.  The RFC Editor has several choices on how to adapt to a more complex set of data to archive:
+While each RFC today is printed to paper and all electronic versions stored on multiple hard drives, no particular effort is made to ensure copies of the software used to render or read the canonical plain text RFC are also archived.  The RFC Editor has several choices on how to adapt to a more complex set of data to archive:
 
  * a simplified bit stream preservation model that focuses on "best effort" standard data retention practices, which rely on backups and regular equipment change to preserve the data, and assuming that emulators may be built when needed if the formats used go out of common use (essentially the existing model);
 
@@ -244,7 +249,7 @@ Those options are listed in order of least to greatest complexity and expense.  
 
 ### "Best Effort" data retention
 
-When dealing with very simple data structures such as plain text, ASCII-only files, the experience of the RFC Series suggests that for the last few decades, hardware and operating system changes have had minimal impact on the document files being stored.  While a complete failure of a server migration in the past has corrupted the data set, that is a somewhat different problem than the tools themselves changing such that plain text files are not easily read.  Given that the basic text format and ASCII encoding remain in common use, the standard protections against file corruption and data loss, such as disk mirroring, off-site backups, and periodic restore testing will continue to provide access for the foreseeable future.  As has been pointed out, both in this document and in broader community discussion, that is not sufficient when one moves into more complex formats such as XML, HTML, PDF, or other proprietary formats offered by today's large IT companies.  The risk of technological change resulting in the file formats mentioned being deprecated or changed without backwards compatibility is fairly high when looking at a future of decades or centuries.
+When dealing with very simple data structures such as plain text, ASCII-only files, the experience of the RFC Series suggests that for the last few decades, hardware and operating system changes have had minimal impact on the document files being stored.  While a complete failure of a server migration in the past had corrupted the data set, that situation represents a somewhat different problem than the tools themselves changing such that plain text files are not easily read.  Given that the basic text format and ASCII encoding remain in common use, the standard protections against file corruption and data loss, such as disk mirroring, off-site backups, and periodic restore testing will continue to provide access for the foreseeable future.  As has been pointed out, both in this document and in broader community discussion, that is not sufficient when one moves into more complex formats such as XML, HTML, PDF, or other proprietary formats offered by today's large IT companies.  The risk of technological change resulting in the file formats mentioned being deprecated or changed without backwards compatibility is fairly high when looking at a future of decades or centuries.
 
 It is not recommended that this model of archiving the RFC Series continue after plain text is no longer the canonical format.
 
@@ -282,7 +287,7 @@ The underlying servers hosting the tools, database, RFCs, and errata are the phy
 
 Having a digital archive policy provides input into the budget process.  The main costs associated with digital archives come from the complexity and quantity of the material being archived, as described in the section on Normalization.  To quote the Digital Protection Conservancy Handbook:
  
- “The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage.” --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling
+> The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage.” --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling
 
 Estimating potential costs and providing figures it outside of the scope of this document, but it should be noted that costs are a major factor when determining what level of archival practice an organization will follow.
 
