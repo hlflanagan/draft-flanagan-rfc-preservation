@@ -2,7 +2,7 @@
 title: Digital Preservation Considerations for the RFC Series
 abbrev: I-D
 docname: draft-flanagan-rfc-preservation-00
-date: 2014-08-18
+date: 2014-08-19
 category: info
 ipr: trust200902
 pi:
@@ -30,14 +30,28 @@ informative:
         name: Matthew Hardy
     date: July 2014
     seriesinfo: draft-hansen-rfc-use-of-pdf-02
+  DPC:
+    title: "Digital Preservation Handbook"
+    author: 
+      org: DigitalPreservationCoalition
+    date: 2012
+    target: http://www.dpconline.org/advice/preservationhandbook
   ISO14721:
     title: >
-     "Space data and information transfer systems — Open archival 
-      information system (OAIS) — Reference model"
+     "Space data and information transfer systems -- Open archival 
+      information system (OAIS) -- Reference model"
     author:
       org: International Organization for Standardization
     date: 2012
     seriesinfo: ISO 14721:2012
+  ISO16363: 
+    title: >
+     "Space data and information transfer systems -- Audit and 
+      Certification of Trustworthy Digital Repositories"
+    author:
+      org: International Organization for Standardization
+    date: 2011
+    seriesinfo: ISO 16363:2011
   LIFE:
     title: "LIFE^3: Predictive Costing of Digital Preservation"
     author: 
@@ -110,7 +124,7 @@ To summarize, the key areas of tension between the roles of publisher and archiv
 
 Through most of the history of the RFC Series, the file format for RFCs has been plain text with an ASCII-only character set.  This choice offered the simplest format likely to remain available to the largest number of consumers, and the one most likely to be resistant to changes in technology over time.  Increasingly, however, consumers and authors are requesting additional features that would allow for easy reading on a wider array of devices and retain all the metadata an author intended in their document.  In 2013, RFC 6949, "RFC Series Format Requirements and Future Development," captured the high level requirements for the Series; the fundamental issue being that the plain text, ASCII-only documents no longer met the needs of the communities interested in using and producing RFCs {{RFC6949}}.
 
-The assertion that plain text, ASCII-only documents no longer meet the needs of the community in turn suggests that the simple archive process maintained by the RFC Editor is also no longer sufficient.  More complex tools and file formats require a more complex process to make sure that RFCs can still be read and rendered far into the future.  This document describes the considerations that must inform any changes in policy and procedure and describes a model for the RFC Series to follow when additional formats beyond ASCII-only plain text are published.  The functional model that provides the framework for the archival process described in this document was derived from the ISO Open Archival Information System (OAIS) Reference Model, defined in "Space data and information transfer systems — Open archival information system (OAIS) — Reference model" {{ISO14721}}.
+The assertion that plain text, ASCII-only documents no longer meet the needs of the community in turn suggests that the simple archive process maintained by the RFC Editor is also no longer sufficient.  More complex tools and file formats require a more complex process to make sure that RFCs can still be read and rendered far into the future.  This document describes the considerations that must inform any changes in policy and procedure and describes a model for the RFC Series to follow when additional formats beyond ASCII-only plain text are published.  The functional model that provides the framework for the archival process described in this document was derived from the ISO Open Archival Information System (OAIS) Reference Model, defined in "Space data and information transfer systems - Open archival information system (OAIS) - Reference model" {{ISO14721}}.
 
 ## Terminology
 
@@ -270,7 +284,7 @@ Those options are listed in order of least to greatest complexity and expense.  
 
 When dealing with very simple data structures such as plain text, ASCII-only files, the experience of the RFC Series suggests that for the last few decades, hardware and operating system changes have had minimal impact on the document files being stored.  While a complete failure of an operating system migration in the past had corrupted the data set, that situation represents a somewhat different problem than the tools themselves changing such that plain-text files are not easily read with existing technology.  Given that the basic plain-text format and ASCII encoding remain in common use, the standard protections against file corruption and data loss, such as disk mirroring, off-site backups, and periodic restore testing will continue to provide access to the entirety of the RFC Series for the foreseeable future.  As has been pointed out, both in this document and in broader community discussion, that is not sufficient when one moves into more complex formats such as XML, HTML, PDF, or other proprietary formats offered by today's large IT companies.  The risk of technological change resulting in the file formats mentioned being deprecated or changed without backwards compatibility is fairly high when looking at a future of decades or centuries.
 
-It is recommended that this model of archiving the RFC Series cease to be the primary model after the plain text, ASCII-only format is no longer the canonical format.
+It is recommended that this model of archiving the RFC Series cease to be the primary model after the plain text, ASCII-only format is no longer the canonical format.  Best effort data retention is a necessary but not sufficient level of effort for preserving a digital archive.  For more guidance on how to define best effort data retention, the section on Media and Formats, Summary Recommendations, in the latest version of the Digital Preservation Handbook provides useful, concrete information {{DPC}}.
 
 ### Single format for archival purposes
 
@@ -312,9 +326,15 @@ Estimating potential costs and providing figures it outside of the scope of this
 
 # Recommendations
 
-Focus preservation efforts on the XML canonical format, the PDF/A-3 format, and the xml2rfc tool.  All other formats and the overall computing environment should be stored as described in "best effort" data retention and according to the SLA contract that describes system support.
+Given the need to balance cost and complexity with retention of information for historic, legal, and informational purposes, preservation efforts should focus on the XML canonical format, the PDF/A-3 format, and the xml2rfc tool and its documentation.  All other formats and the overall computing environment should be stored as described in "best effort" data retention, which should in turn be described in the appropriate vendor contract for the RFC Publisher.
 
-Preservation efforts will include a bi-annual audit that will verify that the targeted content and all its associated metadata can be read with existing tools.  The full process from acquisition to ingest will be reviewed to ensure that best current practice is being followed from a digital archive community perspective.  While the RFC Editor does not seek to be recognized as 'OAIS-compliant' at this time, use of the "Audit and Certification of Trustworthy Digital Repositories" would provide a solid, accepted method for structuring an audit for this digital archive.  [Review CCSDS 652.0-M-1 "Audit and Certification of Trustworthy Digital Repositories (Magena Book, Issue1) also available as ISO 16363:2011]
+Particular preservation efforts should be made by:
+  * choosing a format designed for archiving (PDF/A-3)
+  * embedding the canonical XML format within the PDF/A-3 file
+  * adding a digital signature and checksum for the canonical XML and the PDF/A-3 files
+  * retaining all major versions of the tools used to acquire and ingest an RFC
+
+Preservation efforts will reviewed and validated through a bi-annual audit that will verify that the targeted content and all its associated metadata can be read with existing tools.  The full process from acquisition to ingest will be reviewed to ensure that best current practice is being followed from a digital archive community perspective.  Since the overall model for the RFC Editor-maintained digital archive follows the OAIS Reference model, the associated audit guidelines should be followed.  While the RFC Editor does not seek to be recognized as 'OAIS-compliant' at this time, use of the ISO standard, "Audit and Certification of Trustworthy Digital Repositories," would provide a solid, accepted method for structuring an audit for this digital archive {{ISO16363}}.  
 
 # Summary 
 
