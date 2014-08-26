@@ -2,7 +2,7 @@
 title: Digital Preservation Considerations for the RFC Series
 abbrev: I-D
 docname: draft-flanagan-rfc-preservation-00
-date: 2014-08-19
+date: 2014-08-26
 category: info
 ipr: trust200902
 pi:
@@ -172,7 +172,7 @@ RFCs are created and published as digital objects.  Unlike paper-based publicati
 
 As the custodian and canonical source of RFCs and associated errata, the RFC Editor must consider how to ensure the availability and integrity of this document series far into the future and determine whether the focus must be on bit stream preservation, content preservation, or both.  
 
-The RFC Editor has several advantages in acting as the digital archivist for the Series.  Since the RFC Editor is the publisher as well as the archivist, the RFC Editor controls the format of the material, the process for adding those materials to an archive, and can add any additional metadata considered necessary.  External materials, while a major consideration for more general archives, are no longer accepted by the RFC Editor.  (See “Internet Archaeology: Documents from Early History” for the list of non-RFC digital objects held by the RFC Editor {{RFC-HISTORY}}.)
+The RFC Editor has several advantages in acting as the digital archivist for the Series.  Since the RFC Editor is the publisher as well as the archivist, the RFC Editor controls the format of the material, the process for adding those materials to an archive, and can add any additional metadata considered necessary.  External materials, while a major consideration for more general archives, are no longer accepted by the RFC Editor.  (See ?Internet Archaeology: Documents from Early History? for the list of non-RFC digital objects held by the RFC Editor {{RFC-HISTORY}}.)
 
 This document describes several different preservation models that may fit the needs of the Series, and raises several points for community consideration.  Specifically, it covers information on:
 
@@ -218,7 +218,7 @@ In terms of deciding what to accept in the archive--a major question for most ar
 
 The RFC Editor holds no copyright on I-Ds or RFCs.  As per the IETF Trust Legal Provisions, the copyright for RFCs is held by the authors and the IETF Trust {{TLP}}.  At any point in time, the current entities providing RFC Editor services must be able to release the archive of RFCs to the IETF Trust. 
 
-Note: The RFC Editor is currently only responsible for RFCs; any associated data sets or other research data is not considered within the RFC Editor’s mandate at this time and therefore no consideration to the archival requirements of such datasets is covered in this document.  
+Note: The RFC Editor is currently only responsible for RFCs; any associated data sets or other research data is not considered within the RFC Editor?s mandate at this time and therefore no consideration to the archival requirements of such datasets is covered in this document.  
 
 ## Metadata and document registration
 
@@ -320,7 +320,7 @@ The underlying servers hosting the tools, database, RFCs, and errata are the phy
 
 Having a digital archive policy provides input into the budget process.  The main costs associated with digital archives come from the complexity and quantity of the material being archived, as described in the section on Normalization.  To quote the Digital Protection Conservancy Handbook:
  
-> The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage.” --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling
+> The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage.? --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling
 
 Estimating potential costs and providing figures it outside of the scope of this document, but it should be noted that costs are a major factor when determining what level of archival practice an organization will follow.
 
@@ -329,10 +329,16 @@ Estimating potential costs and providing figures it outside of the scope of this
 Given the need to balance cost and complexity with retention of information for historic, legal, and informational purposes, preservation efforts should focus on the XML canonical format, the PDF/A-3 format, and the xml2rfc tool and its documentation.  All other formats and the overall computing environment should be stored as described in "best effort" data retention, which should in turn be described in the appropriate vendor contract for the RFC Publisher.
 
 Particular preservation efforts should be made by:
+
   * choosing a format designed for archiving (PDF/A-3)
+
   * embedding the canonical XML format within the PDF/A-3 file
+
   * adding a digital signature and checksum for the canonical XML and the PDF/A-3 files
+
   * retaining all major versions of the tools used to acquire and ingest an RFC
+
+  * partnering with other digital archives around the world to mirror copies of the target data
 
 Preservation efforts will reviewed and validated through a bi-annual audit that will verify that the targeted content and all its associated metadata can be read with existing tools.  The full process from acquisition to ingest will be reviewed to ensure that best current practice is being followed from a digital archive community perspective.  Since the overall model for the RFC Editor-maintained digital archive follows the OAIS Reference model, the associated audit guidelines should be followed.  While the RFC Editor does not seek to be recognized as 'OAIS-compliant' at this time, use of the ISO standard, "Audit and Certification of Trustworthy Digital Repositories," would provide a solid, accepted method for structuring an audit for this digital archive {{ISO16363}}.  
 
@@ -347,8 +353,5 @@ None
 # Security Considerations
 
 TBD
-
-
-
 
 

@@ -23,7 +23,7 @@
       </address>
     </author>
 
-    <date year="2014" month="August" day="19"/>
+    <date year="2014" month="August" day="26"/>
 
     
     
@@ -106,7 +106,7 @@
 
 <t>As the custodian and canonical source of RFCs and associated errata, the RFC Editor must consider how to ensure the availability and integrity of this document series far into the future and determine whether the focus must be on bit stream preservation, content preservation, or both.  </t>
 
-<t>The RFC Editor has several advantages in acting as the digital archivist for the Series.  Since the RFC Editor is the publisher as well as the archivist, the RFC Editor controls the format of the material, the process for adding those materials to an archive, and can add any additional metadata considered necessary.  External materials, while a major consideration for more general archives, are no longer accepted by the RFC Editor.  (See "Internet Archaeology: Documents from Early History" for the list of non-RFC digital objects held by the RFC Editor <xref target="RFC-HISTORY"/>.)</t>
+<t>The RFC Editor has several advantages in acting as the digital archivist for the Series.  Since the RFC Editor is the publisher as well as the archivist, the RFC Editor controls the format of the material, the process for adding those materials to an archive, and can add any additional metadata considered necessary.  External materials, while a major consideration for more general archives, are no longer accepted by the RFC Editor.  (See ?Internet Archaeology: Documents from Early History? for the list of non-RFC digital objects held by the RFC Editor <xref target="RFC-HISTORY"/>.)</t>
 
 <t>This document describes several different preservation models that may fit the needs of the Series, and raises several points for community consideration.  Specifically, it covers information on:</t>
 
@@ -136,7 +136,7 @@
   <t>the RFC number</t>
   <t>ISSN</t>
   <t>publication date</t>
-  <t>Digital Object Identifier (DOI)--future</t>
+  <t>Digital Object Identifier (DOI) --future</t>
 </list></t>
 
 <t>Additional metadata, such as author name, is assigned earlier in the document creation process, but it is subject to change up to the point of publication.  More information on metadata is available in section "Metadata and document registration."</t>
@@ -147,7 +147,7 @@
 
 <t>The RFC Editor holds no copyright on I-Ds or RFCs.  As per the IETF Trust Legal Provisions, the copyright for RFCs is held by the authors and the IETF Trust <xref target="TLP"/>.  At any point in time, the current entities providing RFC Editor services must be able to release the archive of RFCs to the IETF Trust. </t>
 
-<t>Note: The RFC Editor is currently only responsible for RFCs; any associated data sets or other research data is not considered within the RFC Editor's mandate at this time and therefore no consideration to the archival requirements of such datasets is covered in this document.  </t>
+<t>Note: The RFC Editor is currently only responsible for RFCs; any associated data sets or other research data is not considered within the RFC Editor?s mandate at this time and therefore no consideration to the archival requirements of such datasets is covered in this document.  </t>
 
 </section>
 <section anchor="metadata-and-document-registration" title="Metadata and document registration">
@@ -233,7 +233,7 @@
 
 <t>Noting that normalization is a complex subject, it is important to consider what to do to mitigate the risk of failure of the normalization process. </t>
 
-<t>The RFC Editor is responsible for making RFCs available to the Internet community.  The canonical version of an RFC does not change once published; any formats officially rendered from the canonical version, however, may change.  One way to mitigate the need to preserve the entire computing environment for an RFC, including web browsers and PDF readers, would be to take advantage of the non-canonical nature of the publication formats and re-render them from the canonical source at the point that browser or reader technology has changed sufficiently to make RFCs largely unavailable to 'modernr' tools.</t>
+<t>The RFC Editor is responsible for making RFCs available to the Internet community.  The canonical version of an RFC does not change once published; any formats officially rendered from the canonical version, however, may change.  One way to mitigate the need to preserve the entire computing environment for an RFC, including web browsers and PDF readers, would be to take advantage of the non-canonical nature of the publication formats and re-render them from the canonical source at the point that browser or reader technology has changed sufficiently to make RFCs largely unavailable to 'modern' tools.</t>
 
 <t>For example, the RFC Editor may develop a practice of starting an annual review of the tools needed to view the publication formats created by the RFC Editor, and determine whether or not the current common and popular reader technologies (i.e., web browsers, PDF viewers, e-readers) can view the existing publication formats.  During that review, the RFC Editor would work with the community to determine if the current publication formats meet the needs of the community, and whether any should be retired or added to improve the availability of information to the community at that time.</t>
 
@@ -250,7 +250,7 @@
 <t>Having a digital archive policy provides input into the budget process.  The main costs associated with digital archives come from the complexity and quantity of the material being archived, as described in the section on Normalization.  To quote the Digital Protection Conservancy Handbook:</t>
 
 <t><list style='empty'>
-  <t>The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage." --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling</t>
+  <t>The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage.? --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling</t>
 </list></t>
 
 <t>Estimating potential costs and providing figures it outside of the scope of this document, but it should be noted that costs are a major factor when determining what level of archival practice an organization will follow.</t>
@@ -259,13 +259,17 @@
 </section>
 <section anchor="recommendations" title="Recommendations">
 
-<t>Given the need to balance cost and complexity with retention of information for historic, legal, and informational purposes, preservation efforts should focus on the XML canonical format, the PDF/A-3 format, and the xml2rfc tool and its documentation.  All other formats and the overall computing environment should be stored as described in 'best effort' data retention, which should in turn be described in the appropriate vendor contract for the RFC Publisher.</t>
+<t>Given the need to balance cost and complexity with retention of information for historic, legal, and informational purposes, preservation efforts should focus on the XML canonical format, the PDF/A-3 format, and the xml2rfc tool and its documentation.  All other formats and the overall computing environment should be stored as described in "best effort" data retention, which should in turn be described in the appropriate vendor contract for the RFC Publisher.</t>
 
-<t>Particular preservation efforts should be made by:
-  * choosing a format designed for archiving (PDF/A-3)
-  * embedding the canonical XML format within the PDF/A-3 file
-  * adding a digital signature and checksum for the canonical XML and the PDF/A-3 files
-  * retaining all major versions of the tools used to acquire and ingest an RFC</t>
+<t>Particular preservation efforts should be made by:</t>
+
+<t><list style='symbols'>
+  <t>choosing a format designed for archiving (PDF/A-3)</t>
+  <t>embedding the canonical XML format within the PDF/A-3 file</t>
+  <t>adding a digital signature and checksum for the canonical XML and the PDF/A-3 files</t>
+  <t>retaining all major versions of the tools used to acquire and ingest an RFC</t>
+  <t>partnering with other digital archives around the world to mirror copies of the target data</t>
+</list></t>
 
 <t>Preservation efforts will reviewed and validated through a bi-annual audit that will verify that the targeted content and all its associated metadata can be read with existing tools.  The full process from acquisition to ingest will be reviewed to ensure that best current practice is being followed from a digital archive community perspective.  Since the overall model for the RFC Editor-maintained digital archive follows the OAIS Reference model, the associated audit guidelines should be followed.  While the RFC Editor does not seek to be recognized as 'OAIS-compliant' at this time, use of the ISO standard, "Audit and Certification of Trustworthy Digital Repositories," would provide a solid, accepted method for structuring an audit for this digital archive <xref target="ISO16363"/>.  </t>
 
