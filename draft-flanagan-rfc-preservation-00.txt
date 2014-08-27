@@ -73,7 +73,7 @@ Table of Contents
      2.4.  Normalization and standardization of canonical file
            structure and format  . . . . . . . . . . . . . . . . . .   9
        2.4.1.  'Best Effort' data retention  . . . . . . . . . . . .  10
-       2.4.2.  Single format for archival purposes . . . . . . . . .  10
+       2.4.2.  Single format for archival purposes . . . . . . . . .  11
        2.4.3.  Holistic archiving of the computing environment . . .  11
      2.5.  Transformation/migration to current publication formats .  12
      2.6.  System Parameters . . . . . . . . . . . . . . . . . . . .  13
@@ -89,8 +89,8 @@ Table of Contents
 
    The RFC Editor is both the publisher and the archivist for the RFC
    Series, a series of technical specifications and policy documents
-   that includes foundational Internet standards [RFCSERIES].  As the
-   publisher of these documents, the goal is to produce clear,
+   that includes foundational Internet standards [RFC6635] [RFCSERIES].
+   As the publisher of these documents, the goal is to produce clear,
    consistent, and readable documents for the community using as many
    modern features, such as hyperlinks and content markup, within the
    document as necessary to convey the information the authors intended
@@ -319,8 +319,9 @@ Internet-Draft                     I-D                       August 2014
 2.2.  Ingest of Documents
 
    When an RFC is published, the canonical format is considered
-   immutable.  At this point, the RFC Production Center assigns the
-   document metadata an archivist needs to identify the unique object.
+   immutable.  At this point, the RFC Production Center, one of the
+   internal roles within the RFC Editor, assigns the document metadata
+   an archivist needs to identify the unique object.
 
    In the case of RFCs, the metadata is assigned to a document at the
    time of publication includes:
@@ -329,7 +330,6 @@ Internet-Draft                     I-D                       August 2014
 
    o  ISSN
 
-   o  publication date
 
 
 
@@ -337,6 +337,8 @@ Flanagan                Expires February 28, 2015               [Page 6]
 
 Internet-Draft                     I-D                       August 2014
 
+
+   o  publication date
 
    o  Digital Object Identifier (DOI) --future
 
@@ -346,10 +348,11 @@ Internet-Draft                     I-D                       August 2014
    section "Metadata and document registration."
 
    The publication of an RFC--the point at which responsibility for the
-   document moves to the RFC Publisher--starts the formal archival
-   process for the document.  At that time, the canonical document
-   should be digitally signed.  Information regarding the signatures and
-   how to verify them must be made available on the RFC Editor website.
+   document moves to the RFC Publisher, another internal role within the
+   RFC Editor--starts the formal archival process for the document.  At
+   that time, the canonical document should be digitally signed.
+   Information regarding the signatures and how to verify them must be
+   made available on the RFC Editor website.
 
    In terms of deciding what to accept in the archive--a major question
    for most archives, and yet simple for the RFC Series--the RFC Editor
@@ -383,9 +386,6 @@ Internet-Draft                     I-D                       August 2014
    located, information on authenticity and provenance, and details on
    the hardware and/or software needed to view or create the documents.
 
-   The RFC Editor maintains this registry in the form of a database that
-   includes all metadata available for an RFC.  This database feeds the
-
 
 
 
@@ -394,6 +394,8 @@ Flanagan                Expires February 28, 2015               [Page 7]
 Internet-Draft                     I-D                       August 2014
 
 
+   The RFC Editor maintains this registry in the form of a database that
+   includes all metadata available for an RFC.  This database feeds the
    search engine on the RFC Editor website and the Info Pages available
    for every RFC (e.g., http://www.rfc-editor.org/info/rfc####).
 
@@ -439,8 +441,6 @@ Internet-Draft                     I-D                       August 2014
    out of scope for the RFC Editor.  As the digital archive industry
    stabilizes, services such as Perma.CC may be a reasonable compromise
    [PERMACC].  Those services provide a permanent URI and image capture
-   of online documents, with a goal of buffering against URI and online
-   availability changes.
 
 
 
@@ -449,6 +449,9 @@ Flanagan                Expires February 28, 2015               [Page 8]
 
 Internet-Draft                     I-D                       August 2014
 
+
+   of online documents, with a goal of buffering against URI and online
+   availability changes.
 
 2.4.  Normalization and standardization of canonical file structure and
       format
@@ -494,9 +497,6 @@ Internet-Draft                     I-D                       August 2014
       used go out of common use (a significant part of the existing
       model);
 
-   o  a content preservation model that focuses on one publication
-      format as a version most likely to be viewable and provide all
-      necessary metadata in the future (a viable option considering the
 
 
 
@@ -506,6 +506,9 @@ Flanagan                Expires February 28, 2015               [Page 9]
 Internet-Draft                     I-D                       August 2014
 
 
+   o  a content preservation model that focuses on one publication
+      format as a version most likely to be viewable and provide all
+      necessary metadata in the future (a viable option considering the
       fact that PDF/A-3--one of the intended publication formats--was
       designed for this type of archiving) [PDF];
 
@@ -549,11 +552,8 @@ Internet-Draft                     I-D                       August 2014
    in the latest version of the Digital Preservation Handbook provides
    useful, concrete information [DPC].
 
-2.4.2.  Single format for archival purposes
 
-   If one ascribes to the idea that preserving the information described
-   by a document, rather than the document itself, is the primary
-   purpose of an archive, then focusing efforts on a single file format
+
 
 
 
@@ -562,6 +562,11 @@ Flanagan                Expires February 28, 2015              [Page 10]
 Internet-Draft                     I-D                       August 2014
 
 
+2.4.2.  Single format for archival purposes
+
+   If one ascribes to the idea that preserving the information described
+   by a document, rather than the document itself, is the primary
+   purpose of an archive, then focusing efforts on a single file format
    is a reasonable option.  Some well-supported archival tooling
    projects follow this route, such as Archivemetica
    https://www.archivematica.org/wiki/Main_Page .  By selecting a
@@ -604,12 +609,7 @@ Internet-Draft                     I-D                       August 2014
    as matching, and possibly exceeding, the complexity of the file
    formats being preserved.
 
-   Consider a future where XML has been obsoleted for half a century,
-   HTML5 was a format used three to four human generations ago, and PDF/
-   A-3 no longer supported by any existing company's reading software.
-   In order for RFCs that were produced with XML as their canonical
-   format, an archive must not only hold the data, it must also hold the
-   entire computing environment that allows the data to be rendered and
+
 
 
 
@@ -618,6 +618,12 @@ Flanagan                Expires February 28, 2015              [Page 11]
 Internet-Draft                     I-D                       August 2014
 
 
+   Consider a future where XML has been obsoleted for half a century,
+   HTML5 was a format used three to four human generations ago, and PDF/
+   A-3 no longer supported by any existing company's reading software.
+   In order for RFCs that were produced with XML as their canonical
+   format, an archive must not only hold the data, it must also hold the
+   entire computing environment that allows the data to be rendered and
    viewed.  Operating systems and hardware on which those OSs can run,
    each major version of each piece of software used or relied upon
    during the publication of an RFC, browsers and readers for HTML, PDF,
@@ -659,12 +665,6 @@ Internet-Draft                     I-D                       August 2014
    viewers, e-readers) can view the existing publication formats.
    During that review, the RFC Editor would work with the community to
    determine if the current publication formats meet the needs of the
-   community, and whether any should be retired or added to improve the
-   availability of information to the community at that time.
-
-
-
-
 
 
 
@@ -673,6 +673,9 @@ Flanagan                Expires February 28, 2015              [Page 12]
 
 Internet-Draft                     I-D                       August 2014
 
+
+   community, and whether any should be retired or added to improve the
+   availability of information to the community at that time.
 
 2.6.  System Parameters
 
@@ -719,9 +722,6 @@ Internet-Draft                     I-D                       August 2014
    scope of this document, but it should be noted that costs are a major
    factor when determining what level of archival practice an
    organization will follow.
-
-
-
 
 
 
@@ -869,6 +869,9 @@ Internet-Draft                     I-D                       August 2014
    [RFC5741]  Daigle, L., Kolkman, O., and IAB, "RFC Streams, Headers,
               and Boilerplates", RFC 5741, December 2009.
 
+   [RFC6635]  Kolkman, O., Halpern, J., and IAB, "RFC Editor Model
+              (Version 2)", RFC 6635, June 2012.
+
    [RFC6949]  Flanagan, H. and N. Brownlee, "RFC Series Format
               Requirements and Future Development", RFC 6949, May 2013.
 
@@ -878,9 +881,6 @@ Author's Address
    RFC Editor
 
    Email: rse@rfc-editor.og
-
-
-
 
 
 
