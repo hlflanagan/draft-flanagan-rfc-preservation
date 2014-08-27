@@ -3,6 +3,7 @@
 
 <!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
 <!ENTITY RFC5741 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5741.xml">
+<!ENTITY RFC6635 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6635.xml">
 <!ENTITY RFC6949 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6949.xml">
 ]>
 
@@ -23,7 +24,7 @@
       </address>
     </author>
 
-    <date year="2014" month="August" day="26"/>
+    <date year="2014" month="August" day="27"/>
 
     
     
@@ -46,7 +47,7 @@
 
 <section anchor="introduction" title="Introduction">
 
-<t>The RFC Editor is both the publisher and the archivist for the RFC Series, a series of technical specifications and policy documents that includes foundational Internet standards <xref target="RFCSERIES"/>.  As the publisher of these documents, the goal is to produce clear, consistent, and readable documents for the community using as many modern features, such as hyperlinks and content markup, within the document as necessary to convey the information the authors intended for their audience.  As the archivist, however, the main goal is to preserve both the information described and the documents themselves for the indefinite future.  To meet both of these goals, the RFC Editor must find the necessary balance between the publication needs of today and the archival needs of tomorrow, while acknowledging a finite set of resources to complete both aspects of the RFC Editor function.  </t>
+<t>The RFC Editor is both the publisher and the archivist for the RFC Series, a series of technical specifications and policy documents that includes foundational Internet standards <xref target="RFC6635"/> <xref target="RFCSERIES"/>.  As the publisher of these documents, the goal is to produce clear, consistent, and readable documents for the community using as many modern features, such as hyperlinks and content markup, within the document as necessary to convey the information the authors intended for their audience.  As the archivist, however, the main goal is to preserve both the information described and the documents themselves for the indefinite future.  To meet both of these goals, the RFC Editor must find the necessary balance between the publication needs of today and the archival needs of tomorrow, while acknowledging a finite set of resources to complete both aspects of the RFC Editor function.  </t>
 
 <t>While many files are created during the publication process, this document focuses on the archival needs of RFCs; Internet Drafts (I-Ds) before they are approved for publication by the appropriate stream-approving body are out of scope.</t>
 
@@ -88,7 +89,7 @@
   <t>Content preservation:  All RFCs are printed out on paper at time of publication, and the electronic files preserved on disk and in backups with no particular focus on preserving the entire computing environment used to create the electronic documents.</t>
 </list></t>
 
-<t>When the format for RFCs changes from plain text, ASCII-encoded files, the archival process overall will become significantly more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
+<t>When the format for RFCs changes from plain text, ASCII-encoded files, the archival process overall will become more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
 
 </section>
 </section>
@@ -128,7 +129,7 @@
 
 </section>
 <section anchor="ingest-of-documents" title="Ingest of Documents">
-<t>When an RFC is published, the canonical format is considered immutable.  At this point, the documents are assigned the metadata an archivist needs to identify the unique object.</t>
+<t>When an RFC is published, the canonical format is considered immutable.  At this point, the RFC Production Center, one of the internal roles within the RFC Editor, assigns the document metadata an archivist needs to identify the unique object.</t>
 
 <t>In the case of RFCs, the metadata is assigned to a document at the time of publication includes:</t>
 
@@ -141,7 +142,7 @@
 
 <t>Additional metadata, such as author name, is assigned earlier in the document creation process, but it is subject to change up to the point of publication.  More information on metadata is available in section "Metadata and document registration."</t>
 
-<t>The publication of an RFC starts the formal archival process for the document.  At that time, the canonical document should be digitally signed.  Information regarding the signatures and how to verify them must be made available on the RFC Editor website.  </t>
+<t>The publication of an RFC--the point at which responsibility for the document moves to the RFC Publisher, another internal role within the RFC Editor--starts the formal archival process for the document.  At that time, the canonical document should be digitally signed.  Information regarding the signatures and how to verify them must be made available on the RFC Editor website.  </t>
 
 <t>In terms of deciding what to accept in the archive--a major question for most archives, and yet simple for the RFC Series--the RFC Editor accepts documents that are approved for publication by the stream approving body of one of the document streams: the IETF, IAB, IRTF, or Independent Submissions streams <xref target="RFC5741"/>.   Each document stream has defined processes on when and how I-Ds are approved and submitted to the RFC Editor for publication.  The RFC Editor does not select documents for publication and archiving; the RFC Editor edits and publishes documents as directed by the document streams. </t>
 
