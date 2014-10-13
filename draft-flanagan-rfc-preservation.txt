@@ -4,8 +4,8 @@
 
 Network Working Group                                        H. Flanagan
 Internet-Draft                                                RFC Editor
-Intended status: Informational                           August 27, 2014
-Expires: February 28, 2015
+Intended status: Informational                         September 4, 2014
+Expires: March 8, 2015
 
 
          Digital Preservation Considerations for the RFC Series
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on February 28, 2015.
+   This Internet-Draft will expire on March 8, 2015.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Flanagan                Expires February 28, 2015               [Page 1]
+Flanagan                  Expires March 8, 2015                 [Page 1]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Flanagan                Expires February 28, 2015               [Page 2]
+Flanagan                  Expires March 8, 2015                 [Page 2]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    To summarize, the key areas of tension between the roles of publisher
@@ -165,9 +165,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015               [Page 3]
+Flanagan                  Expires March 8, 2015                 [Page 3]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    Ingest: The point at which a digital object is assigned all necessary
@@ -221,9 +221,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015               [Page 4]
+Flanagan                  Expires March 8, 2015                 [Page 4]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    4.  Bit stream preservation: This part of the process is handled as
@@ -277,9 +277,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015               [Page 5]
+Flanagan                  Expires March 8, 2015                 [Page 5]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    This document describes several different preservation models that
@@ -333,9 +333,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015               [Page 6]
+Flanagan                  Expires March 8, 2015                 [Page 6]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    o  publication date
@@ -389,9 +389,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015               [Page 7]
+Flanagan                  Expires March 8, 2015                 [Page 7]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    The RFC Editor maintains this registry in the form of a database that
@@ -445,9 +445,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015               [Page 8]
+Flanagan                  Expires March 8, 2015                 [Page 8]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    of online documents, with a goal of buffering against URI and online
@@ -501,9 +501,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015               [Page 9]
+Flanagan                  Expires March 8, 2015                 [Page 9]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    o  a content preservation model that focuses on one publication
@@ -557,9 +557,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015              [Page 10]
+Flanagan                  Expires March 8, 2015                [Page 10]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
 2.4.2.  Single format for archival purposes
@@ -613,9 +613,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015              [Page 11]
+Flanagan                  Expires March 8, 2015                [Page 11]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    Consider a future where XML has been obsoleted for half a century,
@@ -669,9 +669,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015              [Page 12]
+Flanagan                  Expires March 8, 2015                [Page 12]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    community, and whether any should be retired or added to improve the
@@ -725,9 +725,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015              [Page 13]
+Flanagan                  Expires March 8, 2015                [Page 13]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
 3.  Recommendations
@@ -781,9 +781,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015              [Page 14]
+Flanagan                  Expires March 8, 2015                [Page 14]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    describe the possibilities and associated risks so that the community
@@ -837,9 +837,9 @@ Internet-Draft                     I-D                       August 2014
 
 
 
-Flanagan                Expires February 28, 2015              [Page 15]
+Flanagan                  Expires March 8, 2015                [Page 15]
 
-Internet-Draft                     I-D                       August 2014
+Internet-Draft                     I-D                    September 2014
 
 
    [RFC-HISTORY]
@@ -893,4 +893,4 @@ Author's Address
 
 
 
-Flanagan                Expires February 28, 2015              [Page 16]
+Flanagan                  Expires March 8, 2015                [Page 16]
