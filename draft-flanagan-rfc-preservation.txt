@@ -4,8 +4,8 @@
 
 Network Working Group                                        H. Flanagan
 Internet-Draft                                                RFC Editor
-Intended status: Informational                         September 4, 2014
-Expires: March 8, 2015
+Intended status: Informational                        September 10, 2014
+Expires: March 14, 2015
 
 
          Digital Preservation Considerations for the RFC Series
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on March 8, 2015.
+   This Internet-Draft will expire on March 14, 2015.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 1]
+Flanagan                 Expires March 14, 2015                 [Page 1]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 2]
+Flanagan                 Expires March 14, 2015                 [Page 2]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -165,13 +165,13 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 3]
+Flanagan                 Expires March 14, 2015                 [Page 3]
 
 Internet-Draft                     I-D                    September 2014
 
 
    Ingest: The point at which a digital object is assigned all necessary
-   metadata to describe the object and it's contents, and added to the
+   metadata to describe the object and its contents, and added to the
    archive.
 
    Bit stream preservation: The process of storing and maintaining
@@ -221,7 +221,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 4]
+Flanagan                 Expires March 14, 2015                 [Page 4]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -270,14 +270,14 @@ Internet-Draft                     I-D                    September 2014
    material, the process for adding those materials to an archive, and
    can add any additional metadata considered necessary.  External
    materials, while a major consideration for more general archives, are
-   no longer accepted by the RFC Editor.  (See ?Internet Archaeology:
-   Documents from Early History? for the list of non-RFC digital objects
+   no longer accepted by the RFC Editor.  (See "Internet Archaeology:
+   Documents from Early History" for the list of non-RFC digital objects
    held by the RFC Editor [RFC-HISTORY].)
 
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 5]
+Flanagan                 Expires March 14, 2015                 [Page 5]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -333,7 +333,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 6]
+Flanagan                 Expires March 14, 2015                 [Page 6]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -372,7 +372,7 @@ Internet-Draft                     I-D                    September 2014
 
    Note: The RFC Editor is currently only responsible for RFCs; any
    associated data sets or other research data is not considered within
-   the RFC Editor?s mandate at this time and therefore no consideration
+   the RFC Editor's mandate at this time and therefore no consideration
    to the archival requirements of such datasets is covered in this
    document.
 
@@ -389,7 +389,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 7]
+Flanagan                 Expires March 14, 2015                 [Page 7]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -445,7 +445,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 8]
+Flanagan                 Expires March 14, 2015                 [Page 8]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -501,7 +501,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                 [Page 9]
+Flanagan                 Expires March 14, 2015                 [Page 9]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -557,7 +557,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                [Page 10]
+Flanagan                 Expires March 14, 2015                [Page 10]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -582,14 +582,14 @@ Internet-Draft                     I-D                    September 2014
    correct tools available to see the source of the PDF/A-3 file
    [draft-hansen-rfc-use-of-pdf].
 
-   When looking at the need to archive RFCs in a resource-limited, a
-   content preservation-only model has merit, but it is not without
-   risks.  First, PDF/A-3 will not be the canonical format, but is
-   intended to be one of the rendered outputs.  It may contain rendering
-   bugs that were not intended to be in the document.  Second, while the
-   various PDF/A formats were designed to be archival, it has not been
-   put to the test of time to determine if will actual live up to its
-   design goals.
+   When looking at the need to archive RFCs in a resource-limited
+   environment, a content preservation-only model has merit, but it is
+   not without risks.  First, PDF/A-3 will not be the canonical format,
+   but is intended to be one of the rendered outputs.  It may contain
+   rendering bugs that were not intended to be in the document.  Second,
+   while the various PDF/A formats were designed to be archival, it has
+   not been put to the test of time to determine if will actual live up
+   to its design goals.
 
    It is a valid option to consider, but the risks, priorities, and
    costs must be discussed by the community before a decision is made to
@@ -613,7 +613,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                [Page 11]
+Flanagan                 Expires March 14, 2015                [Page 11]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -669,7 +669,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                [Page 12]
+Flanagan                 Expires March 14, 2015                [Page 12]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -714,7 +714,7 @@ Internet-Draft                     I-D                    September 2014
       of file types and possibly reducing the storage size.  However, it
       is also necessary to realise that due to storage redundancies
       required for back up each gigabyte of deposited data requires more
-      than one gigabyte of disk space in repository storage.? --
+      than one gigabyte of disk space in repository storage." --
       http://www.dpconline.org/advice/preservationhandbook/
       institutional-strategies/costs-and-business-modelling
 
@@ -725,7 +725,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                [Page 13]
+Flanagan                 Expires March 14, 2015                [Page 13]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -749,8 +749,8 @@ Internet-Draft                     I-D                    September 2014
    o  adding a digital signature and checksum for the canonical XML and
       the PDF/A-3 files
 
-   o  retaining all major versions of the tools used to acquire and
-      ingest an RFC
+   o  retaining all major versions of the tools and the associated
+      documentation used to acquire and ingest an RFC
 
    o  partnering with other digital archives around the world to mirror
       copies of the target data
@@ -781,7 +781,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                [Page 14]
+Flanagan                 Expires March 14, 2015                [Page 14]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -837,7 +837,7 @@ Internet-Draft                     I-D                    September 2014
 
 
 
-Flanagan                  Expires March 8, 2015                [Page 15]
+Flanagan                 Expires March 14, 2015                [Page 15]
 
 Internet-Draft                     I-D                    September 2014
 
@@ -893,4 +893,4 @@ Author's Address
 
 
 
-Flanagan                  Expires March 8, 2015                [Page 16]
+Flanagan                 Expires March 14, 2015                [Page 16]
