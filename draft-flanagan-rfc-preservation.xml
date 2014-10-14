@@ -7,7 +7,7 @@
 <!ENTITY RFC6949 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6949.xml">
 ]>
 
-<rfc ipr="trust200902" docName="draft-flanagan-rfc-preservation-00" category="info">
+<rfc ipr="trust200902" docName="draft-flanagan-rfc-preservation-01" category="info">
 
 <?rfc toc="yes"?>
 
@@ -24,7 +24,7 @@
       </address>
     </author>
 
-    <date year="2014" month="September" day="4"/>
+    <date year="2014" month="October" day="14"/>
 
     
     
@@ -66,7 +66,7 @@
 
 <t>Acquisition: The point at which a document is accepted by the RFC Editor for future inclusion into the archive. </t>
 
-<t>Ingest: The point at which a digital object is assigned all necessary metadata to describe the object and it's contents, and added to the archive.</t>
+<t>Ingest: The point at which a digital object is assigned all necessary metadata to describe the object and its contents, and added to the archive.</t>
 
 <t>Bit stream preservation: The process of storing and maintaining digital objects over time, ensuring that there is no loss or corruption of the bits making up those objects. </t>
 
@@ -89,13 +89,13 @@
   <t>Content preservation:  All RFCs are printed out on paper at time of publication, and the electronic files preserved on disk and in backups with no particular focus on preserving the entire computing environment used to create the electronic documents.</t>
 </list></t>
 
-<t>When the format for RFCs changes from plain text, ASCII-encoded files, the archival process overall will become more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
+<t>When the format for RFCs changes from plain-text, ASCII-encoded files, the archival process overall will become more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
 
 </section>
 </section>
 <section anchor="updating-policy-and-procedure" title="Updating Policy and Procedure">
 
-<t>RFCs are created and published as digital objects.  Unlike paper-based publications, such a purely digital collection requires a focus on retaining the details of the technology as well as retaining the object itself.  Specifically, a digital archive needs to: </t>
+<t>RFCs are created and published as digital objects.  Unlike paper-based publications, a digital collection requires a focus on retaining the details of the technology as well as retaining the object itself.  Specifically, a digital archive needs to: </t>
 
 <t><list style='symbols'>
   <t>consider the inherent instability of digital media;</t>
@@ -107,7 +107,7 @@
 
 <t>As the custodian and canonical source of RFCs and associated errata, the RFC Editor must consider how to ensure the availability and integrity of this document series far into the future and determine whether the focus must be on bit stream preservation, content preservation, or both.  </t>
 
-<t>The RFC Editor has several advantages in acting as the digital archivist for the Series.  Since the RFC Editor is the publisher as well as the archivist, the RFC Editor controls the format of the material, the process for adding those materials to an archive, and can add any additional metadata considered necessary.  External materials, while a major consideration for more general archives, are no longer accepted by the RFC Editor.  (See ?Internet Archaeology: Documents from Early History? for the list of non-RFC digital objects held by the RFC Editor <xref target="RFC-HISTORY"/>.)</t>
+<t>The RFC Editor has several advantages in acting as the digital archivist for the Series.  Since the RFC Editor is the publisher as well as the archivist, the RFC Editor controls the format of the material, the process for adding those materials to an archive, and can add any additional metadata considered necessary.  External materials, while a major consideration for more general archives, are no longer accepted by the RFC Editor.  (See "Internet Archaeology: Documents from Early History" for the list of non-RFC digital objects held by the RFC Editor <xref target="RFC-HISTORY"/>.)</t>
 
 <t>This document describes several different preservation models that may fit the needs of the Series, and raises several points for community consideration.  Specifically, it covers information on:</t>
 
@@ -129,7 +129,7 @@
 
 </section>
 <section anchor="ingest-of-documents" title="Ingest of Documents">
-<t>When an RFC is published, the canonical format is considered immutable.  At this point, the RFC Production Center, one of the internal roles within the RFC Editor, assigns the document metadata an archivist needs to identify the unique object.</t>
+<t>Once an RFC is published, the canonical format is considered immutable.  At this point, the RFC Production Center, one of the internal roles within the RFC Editor, assigns the document metadata an archivist needs to identify the unique object.</t>
 
 <t>In the case of RFCs, the metadata is assigned to a document at the time of publication includes:</t>
 
@@ -148,7 +148,7 @@
 
 <t>The RFC Editor holds no copyright on I-Ds or RFCs.  As per the IETF Trust Legal Provisions, the copyright for RFCs is held by the authors and the IETF Trust <xref target="TLP"/>.  At any point in time, the current entities providing RFC Editor services must be able to release the archive of RFCs to the IETF Trust. </t>
 
-<t>Note: The RFC Editor is currently only responsible for RFCs; any associated data sets or other research data is not considered within the RFC Editor?s mandate at this time and therefore no consideration to the archival requirements of such datasets is covered in this document.  </t>
+<t>Note: The RFC Editor is currently only responsible for RFCs; any associated data sets or other research data is not considered within the RFC Editor's mandate at this time and therefore no consideration to the archival requirements of such datasets is covered in this document.  </t>
 
 </section>
 <section anchor="metadata-and-document-registration" title="Metadata and document registration">
@@ -215,7 +215,7 @@
 
 <t>If one ascribes to the idea that preserving the information described by a document, rather than the document itself, is the primary purpose of an archive, then focusing efforts on a single file format is a reasonable option.  Some well-supported archival tooling projects follow this route, such as Archivemetica <eref target="https://www.archivematica.org/wiki/Main_Page">https://www.archivematica.org/wiki/Main_Page</eref>.  By selecting a feature-rich yet fundamentally stable file format for documents, an organization may avoid expensive whole-environment reconstruction in order to view the document.  The PDF/A formats were designed to be an archival format for electronic documents, and PDF/A-3 is one of the options intended for publication as the RFC Series moves from a plain-text canonical format to an XML canonical format with multiple publication formats.  A PDF/A-3 file can be produced that embeds the XML from which the PDF/A-3 file was created, which in turn allows for both original and rendered document validation--if one has the correct tools available to see the source of the PDF/A-3 file <xref target="draft-hansen-rfc-use-of-pdf"/>.</t>
 
-<t>When looking at the need to archive RFCs in a resource-limited, a content preservation-only model has merit, but it is not without risks.  First, PDF/A-3 will not be the canonical format, but is intended to be one of the rendered outputs.  It may contain rendering bugs that were not intended to be in the document.  Second, while the various PDF/A formats were designed to be archival, it has not been put to the test of time to determine if will actual live up to its design goals.</t>
+<t>When looking at the need to archive RFCs in a resource-limited environment, a content preservation-only model has merit, but it is not without risks.  First, PDF/A-3 will not be the canonical format, but is intended to be one of the rendered outputs.  It may contain rendering bugs that were not intended to be in the document.  Second, while the various PDF/A formats were designed to be archival, it has not been put to the test of time to determine if will actual live up to its design goals.</t>
 
 <t>It is a valid option to consider, but the risks, priorities, and costs must be discussed by the community before a decision is made to follow this path.  The best option may be to combine this with one of the other methods of archiving described in this document to help minimize both risk and cost.</t>
 
@@ -251,7 +251,7 @@
 <t>Having a digital archive policy provides input into the budget process.  The main costs associated with digital archives come from the complexity and quantity of the material being archived, as described in the section on Normalization.  To quote the Digital Protection Conservancy Handbook:</t>
 
 <t><list style='empty'>
-  <t>The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage.? --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling</t>
+  <t>The complexity of the material submitted and number of objects acquired generally has more impact on costs than the total storage size. The type and variety of formats accepted into the repository will also affect cost, because for example proprietary formats are likely to be more difficult and expensive to manage in the long term. It may be possible to reduce costs by limiting the formats the repository will accept, or transforming material into a standard common format. This can be done to reduce the number of file types and possibly reducing the storage size. However, it is also necessary to realise that due to storage redundancies required for back up each gigabyte of deposited data requires more than one gigabyte of disk space in repository storage. --http://www.dpconline.org/advice/preservationhandbook/institutional-strategies/costs-and-business-modelling</t>
 </list></t>
 
 <t>Estimating potential costs and providing figures it outside of the scope of this document, but it should be noted that costs are a major factor when determining what level of archival practice an organization will follow.</t>
@@ -260,7 +260,7 @@
 </section>
 <section anchor="recommendations" title="Recommendations">
 
-<t>Given the need to balance cost and complexity with retention of information for historic, legal, and informational purposes, preservation efforts should focus on the XML canonical format, the PDF/A-3 format, and the xml2rfc tool and its documentation.  All other formats and the overall computing environment should be stored as described in "best effort" data retention, which should in turn be described in the appropriate vendor contract for the RFC Publisher.</t>
+<t>Given the need to balance cost and complexity with retention of information for historic, legal, and informational purposes, preservation efforts should focus on the XML canonical format, the PDF/A-3 format, the xml2rfc tool and its documentation, and at least one PDF reader application.  All other formats and the overall computing environment should be stored as described in "best effort" data retention, which should in turn be described in the appropriate vendor contract for the RFC Publisher.</t>
 
 <t>Particular preservation efforts should be made by:</t>
 
@@ -268,9 +268,12 @@
   <t>choosing a format designed for archiving (PDF/A-3)</t>
   <t>embedding the canonical XML format within the PDF/A-3 file</t>
   <t>adding a digital signature and checksum for the canonical XML and the PDF/A-3 files</t>
-  <t>retaining all major versions of the tools used to acquire and ingest an RFC</t>
+  <t>retaining all major versions of the tools and their associated documentation used to acquire and ingest an RFC</t>
+  <t>retaining at least two software reader applications to ensure the PDF/A-3 and XML files can be viewed in the future</t>
   <t>partnering with other digital archives around the world to mirror copies of the target data</t>
 </list></t>
+
+<t>In order to control costs and focus the archiving effort on the entire content of an RFC, including the metadata and other features embedded within each RFC published in more than just plain text, printing each RFC upon publication to paper is no longer reasonable.  Proper data storage and mirrored copies of RFCs provides more efficient and effective copies in case of catastrophic failure of the existing archive of material.</t>
 
 <t>Preservation efforts will reviewed and validated through a bi-annual audit that will verify that the targeted content and all its associated metadata can be read with existing tools.  The full process from acquisition to ingest will be reviewed to ensure that best current practice is being followed from a digital archive community perspective.  Since the overall model for the RFC Editor-maintained digital archive follows the OAIS Reference model, the associated audit guidelines should be followed.  While the RFC Editor does not seek to be recognized as 'OAIS-compliant' at this time, use of the ISO standard, "Audit and Certification of Trustworthy Digital Repositories," would provide a solid, accepted method for structuring an audit for this digital archive <xref target="ISO16363"/>.  </t>
 
@@ -291,6 +294,14 @@
 
 </section>
 
+<section anchor="change-log" title="Draft Change Log">
+<t>To be removed before publication</t>
+
+<section anchor="changes1" title="-00 to -01">
+<t>Recommendations: added the requirement to archive reader software, and to stop printing out to paper</t>
+</section>
+
+</section>
 
   </middle>
 
