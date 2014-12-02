@@ -917,7 +917,7 @@ Author's Address
    Heather Flanagan
    RFC Editor
 
-   Email: rse@rfc-editor.og
+   Email: rse@rfc-editor.org
 
 
 
