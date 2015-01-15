@@ -4,12 +4,21 @@
 
 Network Working Group                                        H. Flanagan
 Internet-Draft                                                RFC Editor
+<<<<<<< HEAD
+Intended status: Informational                          January 14, 2015
+Expires: July 18, 2015
+
+
+         Digital Preservation Considerations for the RFC Series
+                   draft-flanagan-rfc-preservation-03
+=======
 Intended status: Informational                          December 2, 2014
 Expires: June 5, 2015
 
 
          Digital Preservation Considerations for the RFC Series
                    draft-flanagan-rfc-preservation-02
+>>>>>>> master
 
 Abstract
 
@@ -36,11 +45,15 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
+<<<<<<< HEAD
+   This Internet-Draft will expire on July 18, 2015.
+=======
    This Internet-Draft will expire on June 5, 2015.
+>>>>>>> master
 
 Copyright Notice
 
-   Copyright (c) 2014 IETF Trust and the persons identified as the
+   Copyright (c) 2015 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -53,9 +66,15 @@ Copyright Notice
 
 
 
+<<<<<<< HEAD
+Flanagan                  Expires July 18, 2015                 [Page 1]
+
+Internet-Draft                     I-D                      January 2015
+=======
 Flanagan                  Expires June 5, 2015                  [Page 1]
 
 Internet-Draft                     I-D                     December 2014
+>>>>>>> master
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -83,9 +102,16 @@ Table of Contents
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  15
    6.  Security Considerations . . . . . . . . . . . . . . . . . . .  15
    7.  Draft Change Log  . . . . . . . . . . . . . . . . . . . . . .  15
+<<<<<<< HEAD
+     7.1.  -02 to -03  . . . . . . . . . . . . . . . . . . . . . . .  15
+     7.2.  -01 to -02  . . . . . . . . . . . . . . . . . . . . . . .  16
+     7.3.  -00 to -01  . . . . . . . . . . . . . . . . . . . . . . .  16
+   8.  Informative References  . . . . . . . . . . . . . . . . . . .  16
+=======
      7.1.  -01 to -02  . . . . . . . . . . . . . . . . . . . . . . .  15
      7.2.  -00 to -01  . . . . . . . . . . . . . . . . . . . . . . .  15
    8.  Informative References  . . . . . . . . . . . . . . . . . . .  15
+>>>>>>> master
    Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  17
 
 1.  Introduction
@@ -108,10 +134,16 @@ Table of Contents
 
 
 
+<<<<<<< HEAD
+Flanagan                  Expires July 18, 2015                 [Page 2]
+
+Internet-Draft                     I-D                      January 2015
+=======
 
 Flanagan                  Expires June 5, 2015                  [Page 2]
 
 Internet-Draft                     I-D                     December 2014
+>>>>>>> master
 
 
    While many files are created during the publication process, this
@@ -162,12 +194,21 @@ Internet-Draft                     I-D                     December 2014
    Reference Model, defined in "Space data and information transfer
    systems - Open archival information system (OAIS) - Reference model"
    [ISO14721].
+<<<<<<< HEAD
+
+
+
+Flanagan                  Expires July 18, 2015                 [Page 3]
+
+Internet-Draft                     I-D                      January 2015
+=======
 
 
 
 Flanagan                  Expires June 5, 2015                  [Page 3]
 
 Internet-Draft                     I-D                     December 2014
+>>>>>>> master
 
 
 1.1.  Terminology
@@ -221,9 +262,15 @@ Internet-Draft                     I-D                     December 2014
 
 
 
+<<<<<<< HEAD
+Flanagan                  Expires July 18, 2015                 [Page 4]
+
+Internet-Draft                     I-D                      January 2015
+=======
 Flanagan                  Expires June 5, 2015                  [Page 4]
 
 Internet-Draft                     I-D                     December 2014
+>>>>>>> master
 
 
    3.  Metadata creation: The details regarding an RFC, including RFC
@@ -241,10 +288,11 @@ Internet-Draft                     I-D                     December 2014
        backups with no particular focus on preserving the entire
        computing environment used to create the electronic documents.
 
-   When the format for RFCs changes from plain-text, ASCII-encoded
-   files, the archival process overall will become more complex.
-   Additional metadata and some or possibly all of the computing
-   environment may need to be added to the archive.
+   When the format for RFCs transitions from plain-text, ASCII-encoded
+   files to and XML format with multiple outputs, the archival process
+   overall will become more complex.  Additional metadata and some or
+   possibly all of the computing environment may need to be added to the
+   archive.
 
 2.  Updating Policy and Procedure
 
@@ -273,15 +321,21 @@ Internet-Draft                     I-D                     December 2014
    The RFC Editor has several advantages in acting as the digital
    archivist for the Series.  Since the RFC Editor is the publisher as
    well as the archivist, the RFC Editor controls the format of the
-   material, the process for adding those materials to an archive, and
 
 
 
+<<<<<<< HEAD
+Flanagan                  Expires July 18, 2015                 [Page 5]
+
+Internet-Draft                     I-D                      January 2015
+=======
 Flanagan                  Expires June 5, 2015                  [Page 5]
 
 Internet-Draft                     I-D                     December 2014
+>>>>>>> master
 
 
+   material, the process for adding those materials to an archive, and
    can add any additional metadata considered necessary.  External
    materials, while a major consideration for more general archives, are
    no longer accepted by the RFC Editor.  (See "Internet Archaeology:
@@ -333,11 +387,21 @@ Internet-Draft                     I-D                     December 2014
 
 
 
+<<<<<<< HEAD
+Flanagan                  Expires July 18, 2015                 [Page 6]
+
+Internet-Draft                     I-D                      January 2015
+
+
+   o  the RFC number
+
+=======
 Flanagan                  Expires June 5, 2015                  [Page 6]
 
 Internet-Draft                     I-D                     December 2014
 
 
+>>>>>>> master
    o  ISSN
 
    o  publication date
@@ -384,6 +448,18 @@ Internet-Draft                     I-D                     December 2014
    is the data that clearly identifies every aspect of a document, from
    its identifier (i.e., the RFC number, the I-D draft string) to the
    size and file format of the document and more.  Metadata is stored in
+<<<<<<< HEAD
+
+
+
+Flanagan                  Expires July 18, 2015                 [Page 7]
+
+Internet-Draft                     I-D                      January 2015
+
+
+   a central registry that stores information on what exactly is being
+   preserved, where it is located, information on authenticity and
+=======
    a central registry that stores information on what exactly is being
    preserved, where it is located, information on authenticity and
 
@@ -394,6 +470,7 @@ Flanagan                  Expires June 5, 2015                  [Page 7]
 Internet-Draft                     I-D                     December 2014
 
 
+>>>>>>> master
    provenance, and details on the hardware and/or software needed to
    view or create the documents.
 
@@ -437,9 +514,20 @@ Internet-Draft                     I-D                     December 2014
 
    Info pages also include links to: errata, IPR searches, plain text
    and XML citation files.
+<<<<<<< HEAD
 
    In terms of best practice, all documents used as normative references
    within an RFC would also be stored in the archive.  While this is
+
+
+
+Flanagan                  Expires July 18, 2015                 [Page 8]
+
+Internet-Draft                     I-D                      January 2015
+
+=======
+>>>>>>> master
+
    done automatically when the normative reference is another RFC (the
    usual case), retaining a copy of third-party documents is considered
 
@@ -492,10 +580,21 @@ Internet-Draft                     I-D                     December 2014
    plain-text RFC are also archived.  The RFC Editor has several choices
    on how to adapt to a more complex set of data to archive and follow
    best practice as defined by the digital archive community:
+<<<<<<< HEAD
 
    o  a simplified bit stream preservation model that focuses on "best
       effort" standard data retention practices, which rely on backups,
       upgrades, and regular equipment change to preserve the data, and
+
+
+
+Flanagan                  Expires July 18, 2015                 [Page 9]
+
+Internet-Draft                     I-D                      January 2015
+
+=======
+>>>>>>> master
+
       assuming that emulators may be built when needed if the formats
 
 
@@ -552,6 +651,18 @@ Internet-Draft                     I-D                     December 2014
    necessary but not sufficient level of effort for preserving a digital
    archive.  For more guidance on how to define best effort data
    retention, the section on Media and Formats, Summary Recommendations,
+<<<<<<< HEAD
+
+
+
+
+Flanagan                  Expires July 18, 2015                [Page 10]
+
+Internet-Draft                     I-D                      January 2015
+
+
+=======
+>>>>>>> master
    in the latest version of the Digital Preservation Handbook provides
    useful, concrete information [DPC].
 
@@ -580,7 +691,7 @@ Internet-Draft                     I-D                     December 2014
    XML from which the PDF/A-3 file was created, which in turn allows for
    both original and rendered document validation--if one has the
    correct tools available to see the source of the PDF/A-3 file
-   [draft-hansen-rfc-use-of-pdf].
+   [I-D.hansen-rfc-use-of-pdf].
 
    When looking at the need to archive RFCs in a resource-limited
    environment, a content preservation-only model has merit, but it is
@@ -606,6 +717,15 @@ Internet-Draft                     I-D                     December 2014
    it is also about supporting Intellectual Property Rights (IPR) and
    retaining the history of the Internet.  In following this model,
    however, one must consider the complexity of the archival environment
+
+
+
+
+Flanagan                  Expires July 18, 2015                [Page 11]
+
+Internet-Draft                     I-D                      January 2015
+
+
    as matching, and possibly exceeding, the complexity of the file
    formats being preserved.
 
@@ -663,6 +783,14 @@ Internet-Draft                     I-D                     December 2014
    created by the RFC Editor, and determine whether or not the current
    common and popular reader technologies (i.e., web browsers, PDF
    viewers, e-readers) can view the existing publication formats.
+
+
+
+Flanagan                  Expires July 18, 2015                [Page 12]
+
+Internet-Draft                     I-D                      January 2015
+
+
    During that review, the RFC Editor would work with the community to
    determine if the current publication formats meet the needs of the
 
@@ -720,6 +848,14 @@ Internet-Draft                     I-D                     December 2014
 
    Estimating potential costs and providing figures it outside of the
    scope of this document, but it should be noted that costs are a major
+
+
+
+Flanagan                  Expires July 18, 2015                [Page 13]
+
+Internet-Draft                     I-D                      January 2015
+
+
    factor when determining what level of archival practice an
    organization will follow.
 
@@ -757,6 +893,9 @@ Internet-Draft                     I-D                     December 2014
    o  retaining all major versions of the tools and their associated
       documentation used to acquire and ingest an RFC
 
+   o  retaining the final XML file as well as the PDF/A-3 file with the
+      embedded XML
+
    o  retaining at least two software reader applications to ensure the
       PDF/A-3 and XML files can be viewed in the future
 
@@ -781,11 +920,28 @@ Internet-Draft                     I-D                     December 2014
 
 
 
+<<<<<<< HEAD
+
+
+Flanagan                  Expires July 18, 2015                [Page 14]
+
+Internet-Draft                     I-D                      January 2015
+
+
+   Preservation efforts should be reviewed and validated through a bi-
+   annual audit that will verify that the targeted content and all its
+   associated metadata can be read with existing tools.  The full
+   process from acquisition to ingest should be reviewed to ensure that
+   best current practice is being followed from a digital archive
+   community perspective.  Since the overall model for the RFC Editor-
+   maintained digital archive follows the OAIS Reference model, the
+=======
 Flanagan                  Expires June 5, 2015                 [Page 14]
 
 Internet-Draft                     I-D                     December 2014
 
 
+>>>>>>> master
    associated audit guidelines should be followed.  While the RFC Editor
    does not seek to be recognized as 'OAIS-compliant' at this time, use
    of the ISO standard, "Audit and Certification of Trustworthy Digital
@@ -818,22 +974,49 @@ Internet-Draft                     I-D                     December 2014
 
    To be removed before publication
 
+<<<<<<< HEAD
+7.1.  -02 to -03
+
+   Life Cycle of Digital Preservation: modified language to be more
+   clear as to when the archival process becomes more complex
+
+   Recommendations: added that the final XML file should be one of the
+   items retained in an archive
+
+=======
 7.1.  -01 to -02
+>>>>>>> master
 
    Updated text where appropriate to indicate approved I-Ds should also
    be targeted for archiving
 
 7.2.  -00 to -01
 
+<<<<<<< HEAD
+
+Flanagan                  Expires July 18, 2015                [Page 15]
+
+Internet-Draft                     I-D                      January 2015
+
+
+7.2.  -01 to -02
+
+   Updated text where appropriate to indicate approved I-Ds should also
+   be targeted for archiving
+
+7.3.  -00 to -01
+
+=======
+>>>>>>> master
    Recommendations: added the requirement to archive reader software,
    and to stop printing out to paper
 
 8.  Informative References
 
-   [draft-hansen-rfc-use-of-pdf]
+   [I-D.hansen-rfc-use-of-pdf]
               Hansen, T., Masinter, L., and M. Hardy, "PDF for an RFC
               Series Output Document Format", draft-hansen-rfc-use-of-
-              pdf-02 , July 2014.
+              pdf-03 (work in progress), October 2014.
 
 
 
@@ -873,6 +1056,14 @@ Internet-Draft                     I-D                     December 2014
               RFC Editor, "Internet Archaeology: Documents from Early
               History", n.d., <http://www.rfc-editor.org/history.html>.
 
+
+
+
+Flanagan                  Expires July 18, 2015                [Page 16]
+
+Internet-Draft                     I-D                      January 2015
+
+
    [RFC-ONLINE]
               RFC Editor, "History of RFC Online Project", n.d.,
               <http://www.rfc-editor.org/rfc-online-2000.html>.
@@ -887,6 +1078,8 @@ Internet-Draft                     I-D                     December 2014
    [TLP]      IETF Trust, "IETF Trust Legal Provisions", n.d.,
               <http://trustee.ietf.org/docs/
               IETF-Trust-License-Policy.pdf>.
+<<<<<<< HEAD
+=======
 
 
 
@@ -897,6 +1090,7 @@ Flanagan                  Expires June 5, 2015                 [Page 16]
 
 Internet-Draft                     I-D                     December 2014
 
+>>>>>>> master
 
    [USLOC]    Library of Congress, "Life Cycle Models for Digital
               Stewardship", n.d.,
@@ -918,6 +1112,24 @@ Author's Address
    RFC Editor
 
    Email: rse@rfc-editor.org
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> master
 
 
 
@@ -934,19 +1146,8 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<<<<<<< HEAD
+Flanagan                  Expires July 18, 2015                [Page 17]
+=======
 Flanagan                  Expires June 5, 2015                 [Page 17]
+>>>>>>> master

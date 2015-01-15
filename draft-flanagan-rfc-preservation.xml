@@ -5,9 +5,14 @@
 <!ENTITY RFC5741 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5741.xml">
 <!ENTITY RFC6635 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6635.xml">
 <!ENTITY RFC6949 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6949.xml">
+<!ENTITY I-D.hansen-rfc-use-of-pdf SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.hansen-rfc-use-of-pdf.xml">
 ]>
 
+<<<<<<< HEAD
+<rfc ipr="trust200902" docName="draft-flanagan-rfc-preservation-03" category="info">
+=======
 <rfc ipr="trust200902" docName="draft-flanagan-rfc-preservation-02" category="info">
+>>>>>>> master
 
 <?rfc toc="yes"?>
 
@@ -24,7 +29,11 @@
       </address>
     </author>
 
+<<<<<<< HEAD
+    <date year="2015" month="January" day="14"/>
+=======
     <date year="2014" month="December" day="2"/>
+>>>>>>> master
 
     
     
@@ -89,7 +98,7 @@
   <t>Content preservation:  All RFCs are printed out on paper at time of publication, and the electronic files preserved on disk and in backups with no particular focus on preserving the entire computing environment used to create the electronic documents.</t>
 </list></t>
 
-<t>When the format for RFCs changes from plain-text, ASCII-encoded files, the archival process overall will become more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
+<t>When the format for RFCs transitions from plain-text, ASCII-encoded files to and XML format with multiple outputs, the archival process overall will become more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
 
 </section>
 </section>
@@ -211,7 +220,7 @@
 </section>
 <section anchor="single-format-for-archival-purposes" title="Single format for archival purposes">
 
-<t>If one ascribes to the idea that preserving the information described by a document, rather than the document itself, is the primary purpose of an archive, then focusing efforts on a single file format is a reasonable option.  Some well-supported archival tooling projects follow this route, such as Archivemetica <eref target="https://www.archivematica.org/wiki/Main_Page">https://www.archivematica.org/wiki/Main_Page</eref>.  By selecting a feature-rich yet fundamentally stable file format for documents, an organization may avoid expensive whole-environment reconstruction in order to view the document.  The PDF/A formats were designed to be an archival format for electronic documents, and PDF/A-3 is one of the options intended for publication as the RFC Series moves from a plain-text canonical format to an XML canonical format with multiple publication formats.  A PDF/A-3 file can be produced that embeds the XML from which the PDF/A-3 file was created, which in turn allows for both original and rendered document validation--if one has the correct tools available to see the source of the PDF/A-3 file <xref target="draft-hansen-rfc-use-of-pdf"/>.</t>
+<t>If one ascribes to the idea that preserving the information described by a document, rather than the document itself, is the primary purpose of an archive, then focusing efforts on a single file format is a reasonable option.  Some well-supported archival tooling projects follow this route, such as Archivemetica <eref target="https://www.archivematica.org/wiki/Main_Page">https://www.archivematica.org/wiki/Main_Page</eref>.  By selecting a feature-rich yet fundamentally stable file format for documents, an organization may avoid expensive whole-environment reconstruction in order to view the document.  The PDF/A formats were designed to be an archival format for electronic documents, and PDF/A-3 is one of the options intended for publication as the RFC Series moves from a plain-text canonical format to an XML canonical format with multiple publication formats.  A PDF/A-3 file can be produced that embeds the XML from which the PDF/A-3 file was created, which in turn allows for both original and rendered document validation--if one has the correct tools available to see the source of the PDF/A-3 file <xref target="I-D.hansen-rfc-use-of-pdf"/>.</t>
 
 <t>When looking at the need to archive RFCs in a resource-limited environment, a content preservation-only model has merit, but it is not without risks.  First, PDF/A-3 will not be the canonical format, but is intended to be one of the rendered outputs.  It may contain rendering bugs that were not intended to be in the document.  Second, while the various PDF/A formats were designed to be archival, it has not been put to the test of time to determine if will actual live up to its design goals.</t>
 
@@ -268,6 +277,7 @@
   <t>adding a digital signature and checksum for the canonical XML and the PDF/A-3 files</t>
   <t>retaining a copy of the plain-text or XML file submitted for approved I-Ds</t>
   <t>retaining all major versions of the tools and their associated documentation used to acquire and ingest an RFC</t>
+  <t>retaining the final XML file as well as the PDF/A-3 file with the embedded XML</t>
   <t>retaining at least two software reader applications to ensure the PDF/A-3 and XML files can be viewed in the future</t>
   <t>partnering with other digital archives around the world to mirror copies of the target data</t>
 </list></t>
@@ -295,6 +305,13 @@
 
 <section anchor="change-log" title="Draft Change Log">
 <t>To be removed before publication</t>
+<<<<<<< HEAD
+<section anchor="changes3" title="-02 to -03">
+<t>Life Cycle of Digital Preservation: modified language to be more clear as to when the archival process becomes more complex</t>
+<t>Recommendations: added that the final XML file should be one of the items retained in an archive</t>
+</section>
+=======
+>>>>>>> master
 <section anchor="changes2" title="-01 to -02">
 <t>Updated text where appropriate to indicate approved I-Ds should also be targeted for archiving
 </t>
@@ -311,23 +328,7 @@
 
 
     <references title='Informative References'>
-
-<reference anchor="draft-hansen-rfc-use-of-pdf" >
-  <front>
-    <title>PDF for an RFC Series Output Document Format</title>
-    <author initials="T." surname="Hansen" fullname="Tony Hansen">
-      <organization></organization>
-    </author>
-    <author initials="L." surname="Masinter" fullname="Larry Masinter">
-      <organization></organization>
-    </author>
-    <author initials="M." surname="Hardy" fullname="Matthew Hardy">
-      <organization></organization>
-    </author>
-    <date year="2014" month="July"/>
-  </front>
-  <seriesInfo name="draft-hansen-rfc-use-of-pdf-02" value=""/>
-</reference>
+&I-D.hansen-rfc-use-of-pdf;
 <reference anchor="DPC" target="http://www.dpconline.org/advice/preservationhandbook">
   <front>
     <title>Digital Preservation Handbook</title>
