@@ -5,9 +5,10 @@
 <!ENTITY RFC5741 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5741.xml">
 <!ENTITY RFC6635 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6635.xml">
 <!ENTITY RFC6949 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6949.xml">
+<!ENTITY I-D.hansen-rfc-use-of-pdf SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.hansen-rfc-use-of-pdf.xml">
 ]>
 
-<rfc ipr="trust200902" docName="draft-flanagan-rfc-preservation-01" category="info">
+<rfc ipr="trust200902" docName="draft-flanagan-rfc-preservation-03" category="info">
 
 <?rfc toc="yes"?>
 
@@ -19,12 +20,12 @@
       <address>
         
         
-        <email>rse@rfc-editor.og</email>
+        <email>rse@rfc-editor.org</email>
         
       </address>
     </author>
 
-    <date year="2014" month="October" day="14"/>
+    <date year="2015" month="January" day="14"/>
 
     
     
@@ -49,18 +50,18 @@
 
 <t>The RFC Editor is both the publisher and the archivist for the RFC Series, a series of technical specifications and policy documents that includes foundational Internet standards <xref target="RFC6635"/> <xref target="RFCSERIES"/>.  As the publisher of these documents, the goal is to produce clear, consistent, and readable documents for the community using as many modern features, such as hyperlinks and content markup, within the document as necessary to convey the information the authors intended for their audience.  As the archivist, however, the main goal is to preserve both the information described and the documents themselves for the indefinite future.  To meet both of these goals, the RFC Editor must find the necessary balance between the publication needs of today and the archival needs of tomorrow, while acknowledging a finite set of resources to complete both aspects of the RFC Editor function.  </t>
 
-<t>While many files are created during the publication process, this document focuses on the archival needs of RFCs; Internet Drafts (I-Ds) before they are approved for publication by the appropriate stream-approving body are out of scope.</t>
+<t>While many files are created during the publication process, this document focuses on the archival needs of RFCs and the Internet-Drafts (I-Ds) that are approved for publication; I-Ds before they are approved for publication by the appropriate stream-approving body are out of scope.</t>
 
 <t>To summarize, the key areas of tension between the roles of publisher and archivist are:</t>
 
 <t><list style='symbols'>
   <t>the desire of the publisher to meet the needs expressed by the authors who want to use the latest technology within their documents, such as vector graphics, live links, and a rich set of metadata;</t>
-  <t>the desire of the archivist to support only the simplest format for documents possible--currently held by the Series to be ASCII-only plain text--so that the tools needed to view the documents are equally simple and resistant to changes in technology, resulting in a set of documents that will be easier to archive for at least the next several decades if not centuries.</t>
+  <t>the desire of the archivist to support only the simplest format for documents possible--currently held by the Series to be ASCII-only plain-text--so that the tools needed to view the documents are equally simple and resistant to changes in technology, resulting in a set of documents that will be easier to archive for at least the next several decades if not centuries.</t>
 </list></t>
 
-<t>Through most of the history of the RFC Series, the file format for RFCs has been plain text with an ASCII-only character set.  This choice offered the simplest format likely to remain available to the largest number of consumers, and the one most likely to be resistant to changes in technology over time.  Increasingly, however, consumers and authors are requesting additional features that would allow for easy reading on a wider array of devices and retain all the metadata an author intended in their document.  In 2013, RFC 6949, "RFC Series Format Requirements and Future Development," captured the high level requirements for the Series; the fundamental issue being that the plain text, ASCII-only documents no longer met the needs of the communities interested in using and producing RFCs <xref target="RFC6949"/>.</t>
+<t>Through most of the history of the RFC Series, the file format for RFCs has been plain text with an ASCII-only character set.  This choice offered the simplest format likely to remain available to the largest number of consumers, and the one most likely to be resistant to changes in technology over time.  Increasingly, however, consumers and authors are requesting additional features that would allow for easy reading on a wider array of devices and retain all the metadata an author intended in their document.  In 2013, RFC 6949, "RFC Series Format Requirements and Future Development," captured the high level requirements for the Series; the fundamental issue being that the plain-text, ASCII-only documents no longer met the needs of the communities interested in using and producing RFCs <xref target="RFC6949"/>.</t>
 
-<t>The assertion that plain text, ASCII-only documents no longer meet the needs of the community in turn suggests that the simple archive process maintained by the RFC Editor is also no longer sufficient.  More complex tools and file formats require a more complex process to make sure that RFCs can still be read and rendered far into the future.  This document describes the considerations that must inform any changes in policy and procedure and describes a model for the RFC Series to follow when additional formats beyond ASCII-only plain text are published.  The functional model that provides the framework for the archival process described in this document was derived from the ISO Open Archival Information System (OAIS) Reference Model, defined in "Space data and information transfer systems - Open archival information system (OAIS) - Reference model" <xref target="ISO14721"/>.</t>
+<t>The assertion that plain-text, ASCII-only documents no longer meet the needs of the community in turn suggests that the simple archive process maintained by the RFC Editor is also no longer sufficient.  More complex tools and file formats require a more complex process to make sure that RFCs can still be read and rendered far into the future.  This document describes the considerations that must inform any changes in policy and procedure, and describes a model for the RFC Series to follow when additional formats beyond the ASCII-only, plain-text RFCs are published.  The functional model that provides the framework for the archival process described in this document was derived from the ISO Open Archival Information System (OAIS) Reference Model, defined in "Space data and information transfer systems - Open archival information system (OAIS) - Reference model" <xref target="ISO14721"/>.</t>
 
 <section anchor="terminology" title="Terminology">
 
@@ -89,7 +90,7 @@
   <t>Content preservation:  All RFCs are printed out on paper at time of publication, and the electronic files preserved on disk and in backups with no particular focus on preserving the entire computing environment used to create the electronic documents.</t>
 </list></t>
 
-<t>When the format for RFCs changes from plain-text, ASCII-encoded files, the archival process overall will become more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
+<t>When the format for RFCs transitions from plain-text, ASCII-encoded files to and XML format with multiple outputs, the archival process overall will become more complex.  Additional metadata and some or possibly all of the  computing environment may need to be added to the archive.</t>
 
 </section>
 </section>
@@ -123,9 +124,7 @@
 </list></t>
 
 <section anchor="acquisition-of-documents" title="Acquisition of Documents">
-<t>The acquisition process for RFCs starts with the submission of an I-D for publication.  During the editorial process, information such as the document metadata are finalized prior to publication.  The document does not formally enter the archive, however, until the point of publication, which is considered the point of ingest from an archival perspective.</t>
-
-<t>There has been a suggestion that the Internet-Draft (I-D) submitted to the RFC Editor should be included in the archive.  This is a topic for discussion by the community.</t>
+<t>The acquisition process for documents intended for the archive starts with the submission of an approved I-D for publication.  During the editorial process, information such as the document metadata are finalized prior to publication.  The initial I-D as submitted and the RFC produced from it do not formally enter the archive, however, until the time of publication, which is considered the point of ingest from an archival perspective.</t>
 
 </section>
 <section anchor="ingest-of-documents" title="Ingest of Documents">
@@ -142,7 +141,7 @@
 
 <t>Additional metadata, such as author name, is assigned earlier in the document creation process, but it is subject to change up to the point of publication.  More information on metadata is available in section "Metadata and document registration."</t>
 
-<t>The publication of an RFC--the point at which responsibility for the document moves to the RFC Publisher, another internal role within the RFC Editor--starts the formal archival process for the document.  At that time, the canonical document should be digitally signed.  Information regarding the signatures and how to verify them must be made available on the RFC Editor website.  </t>
+<t>The publication of an RFC--the point at which responsibility for the document moves to the RFC Publisher, another internal role within the RFC Editor--starts the formal archival process for the documents.  At that time, the canonical document should be digitally signed.  Information regarding the signatures and how to verify them must be made available on the RFC Editor website.  </t>
 
 <t>In terms of deciding what to accept in the archive--a major question for most archives, and yet simple for the RFC Series--the RFC Editor accepts documents that are approved for publication by the stream approving body of one of the document streams: the IETF, IAB, IRTF, or Independent Submissions streams <xref target="RFC5741"/>.   Each document stream has defined processes on when and how I-Ds are approved and submitted to the RFC Editor for publication.  The RFC Editor does not select documents for publication and archiving; the RFC Editor edits and publishes documents as directed by the document streams. </t>
 
@@ -153,9 +152,9 @@
 </section>
 <section anchor="metadata-and-document-registration" title="Metadata and document registration">
 
-<t>Metadata is data about data.  In the field of digital archiving, this is the data that clearly identifies every aspect of a document, from its identifier (i.e., the RFC number) to the size and file format of the document and more.  Metadata is stored in a central registry that stores information on what exactly is being preserved, where it is located, information on authenticity and provenance, and details on the hardware and/or software needed to view or create the documents. </t>
+<t>Metadata is data about data.  In the field of digital archiving, this is the data that clearly identifies every aspect of a document, from its identifier (i.e., the RFC number, the I-D draft string) to the size and file format of the document and more.  Metadata is stored in a central registry that stores information on what exactly is being preserved, where it is located, information on authenticity and provenance, and details on the hardware and/or software needed to view or create the documents. </t>
 
-<t>The RFC Editor maintains this registry in the form of a database that includes all metadata available for an RFC.  This database feeds the search engine on the RFC Editor website and the Info Pages available for every RFC (e.g., http://www.rfc-editor.org/info/rfc####).</t>
+<t>The RFC Editor maintains this registry in the form of a database that includes all metadata available for documents engaged in the final editing and publication process.  This database feeds the search engine on the RFC Editor website and the Info Pages available for every RFC (e.g., http://www.rfc-editor.org/info/rfc####).</t>
 
 <t>Current list of metadata presented in the RFC Info pages</t>
 
@@ -190,11 +189,11 @@
 
 <t>The normalization process is perhaps the most technically critical parts of digital archiving.  The purpose here is content preservation--making sure the data accepted for archiving are in the most stable and easily accessed formats possible for the long-term future, requiring the least amount of re-engineering and emulation of environments in order to view the document in the future.  Normalization is about enabling long-term access to the information within a document.</t>
 
-<t>Over the history of the RFC Series, documents have been submitted for publication in a variety of formats, including paper in the earliest RFCs.  Today, the majority of RFCs are available in both a canonical plain text format and PDF format.  For exceptions to this list, see the RFC Online Project  <xref target="RFC-ONLINE"/>.  </t>
+<t>Over the history of the RFC Series, documents have been submitted for publication in a variety of formats, including paper in the earliest RFCs.  Today, the majority of RFCs are available in both a canonical plain-text format and PDF format.  For exceptions to this list, see the RFC Online Project  <xref target="RFC-ONLINE"/>.  </t>
 
 <t>Currently, all RFCs are printed out to paper and stored at time of publication.  This has been a reasonable backup plan for several decades.  With few of the features one might expect from a digital document format (including links, metadata within the document, or line drawings), plain-text files do not lose much, if any, information when printed out to paper.  As the published formats change (see RFC 6949), however, printing to paper provides less value as much of the metadata that is an intrinsic yet invisible part of the rendered document will be lost in such printing.  With that in mind, the focus needs to change on preserving the new file formats electronically.</t>
 
-<t>While each RFC today is printed to paper and all electronic versions stored on multiple hard drives, no particular effort is made to ensure copies of the software used to render or read the canonical plain text RFC are also archived.  The RFC Editor has several choices on how to adapt to a more complex set of data to archive and follow best practice as defined by the digital archive community:</t>
+<t>While each RFC today is printed to paper and all electronic versions stored on multiple hard drives, no particular effort is made to ensure copies of the software used to render or read the canonical plain-text RFC are also archived.  The RFC Editor has several choices on how to adapt to a more complex set of data to archive and follow best practice as defined by the digital archive community:</t>
 
 <t><list style='symbols'>
   <t>a simplified bit stream preservation model that focuses on "best effort" standard data retention practices, which rely on backups, upgrades, and regular equipment change to preserve the data, and assuming that emulators may be built when needed if the formats used go out of common use (a significant part of the existing model);</t>
@@ -206,14 +205,14 @@
 
 <section anchor="best-effort-data-retention" title="'Best Effort' data retention">
 
-<t>When dealing with very simple data structures such as plain text, ASCII-only files, the experience of the RFC Series suggests that for the last few decades, hardware and operating system changes have had minimal impact on the document files being stored.  While a complete failure of an operating system migration in the past had corrupted the data set, that situation represents a somewhat different problem than the tools themselves changing such that plain-text files are not easily read with existing technology.  Given that the basic plain-text format and ASCII encoding remain in common use, the standard protections against file corruption and data loss, such as disk mirroring, off-site backups, and periodic restore testing will continue to provide access to the entirety of the RFC Series for the foreseeable future.  As has been pointed out, both in this document and in broader community discussion, that is not sufficient when one moves into more complex formats such as XML, HTML, PDF, or other proprietary formats offered by today's large IT companies.  The risk of technological change resulting in the file formats mentioned being deprecated or changed without backwards compatibility is fairly high when looking at a future of decades or centuries.</t>
+<t>When dealing with very simple data structures such as plain-text, ASCII-only files, the experience of the RFC Series suggests that for the last few decades, hardware and operating system changes have had minimal impact on the document files being stored.  While a complete failure of an operating system migration in the past had corrupted the data set, that situation represents a somewhat different problem than the tools themselves changing such that plain-text files are not easily read with existing technology.  Given that the basic plain-text format and ASCII encoding remain in common use, the standard protections against file corruption and data loss, such as disk mirroring, off-site backups, and periodic restoration testing will continue to provide access to the entirety of the RFC Series for the foreseeable future.  As has been pointed out, both in this document and in broader community discussion, that is not sufficient when one moves into more complex formats such as XML, HTML, PDF, or other proprietary formats offered by today's large IT companies.  The risk of technological change resulting in the file formats mentioned being deprecated or changed without backwards compatibility is fairly high when looking at a future of decades or centuries.</t>
 
-<t>It is recommended that this model of archiving the RFC Series cease to be the primary model after the plain text, ASCII-only format is no longer the canonical format.  Best effort data retention is a necessary but not sufficient level of effort for preserving a digital archive.  For more guidance on how to define best effort data retention, the section on Media and Formats, Summary Recommendations, in the latest version of the Digital Preservation Handbook provides useful, concrete information <xref target="DPC"/>.</t>
+<t>It is recommended that this model of archiving the RFC Series cease to be the primary model after the plain-text, ASCII-only format is no longer the canonical format.  Best effort data retention is a necessary but not sufficient level of effort for preserving a digital archive.  For more guidance on how to define best effort data retention, the section on Media and Formats, Summary Recommendations, in the latest version of the Digital Preservation Handbook provides useful, concrete information <xref target="DPC"/>.</t>
 
 </section>
 <section anchor="single-format-for-archival-purposes" title="Single format for archival purposes">
 
-<t>If one ascribes to the idea that preserving the information described by a document, rather than the document itself, is the primary purpose of an archive, then focusing efforts on a single file format is a reasonable option.  Some well-supported archival tooling projects follow this route, such as Archivemetica <eref target="https://www.archivematica.org/wiki/Main_Page">https://www.archivematica.org/wiki/Main_Page</eref>.  By selecting a feature-rich yet fundamentally stable file format for documents, an organization may avoid expensive whole-environment reconstruction in order to view the document.  The PDF/A formats were designed to be an archival format for electronic documents, and PDF/A-3 is one of the options intended for publication as the RFC Series moves from a plain-text canonical format to an XML canonical format with multiple publication formats.  A PDF/A-3 file can be produced that embeds the XML from which the PDF/A-3 file was created, which in turn allows for both original and rendered document validation--if one has the correct tools available to see the source of the PDF/A-3 file <xref target="draft-hansen-rfc-use-of-pdf"/>.</t>
+<t>If one ascribes to the idea that preserving the information described by a document, rather than the document itself, is the primary purpose of an archive, then focusing efforts on a single file format is a reasonable option.  Some well-supported archival tooling projects follow this route, such as Archivemetica <eref target="https://www.archivematica.org/wiki/Main_Page">https://www.archivematica.org/wiki/Main_Page</eref>.  By selecting a feature-rich yet fundamentally stable file format for documents, an organization may avoid expensive whole-environment reconstruction in order to view the document.  The PDF/A formats were designed to be an archival format for electronic documents, and PDF/A-3 is one of the options intended for publication as the RFC Series moves from a plain-text canonical format to an XML canonical format with multiple publication formats.  A PDF/A-3 file can be produced that embeds the XML from which the PDF/A-3 file was created, which in turn allows for both original and rendered document validation--if one has the correct tools available to see the source of the PDF/A-3 file <xref target="I-D.hansen-rfc-use-of-pdf"/>.</t>
 
 <t>When looking at the need to archive RFCs in a resource-limited environment, a content preservation-only model has merit, but it is not without risks.  First, PDF/A-3 will not be the canonical format, but is intended to be one of the rendered outputs.  It may contain rendering bugs that were not intended to be in the document.  Second, while the various PDF/A formats were designed to be archival, it has not been put to the test of time to determine if will actual live up to its design goals.</t>
 
@@ -265,17 +264,19 @@
 <t>Particular preservation efforts should be made by:</t>
 
 <t><list style='symbols'>
-  <t>choosing a format designed for archiving (PDF/A-3)</t>
-  <t>embedding the canonical XML format within the PDF/A-3 file</t>
+  <t>choosing a format designed for archiving RFCs (PDF/A-3)</t>
+  <t>embedding the canonical XML format within the PDF/A-3 file for RFCs</t>
   <t>adding a digital signature and checksum for the canonical XML and the PDF/A-3 files</t>
+  <t>retaining a copy of the plain-text or XML file submitted for approved I-Ds</t>
   <t>retaining all major versions of the tools and their associated documentation used to acquire and ingest an RFC</t>
+  <t>retaining the final XML file as well as the PDF/A-3 file with the embedded XML</t>
   <t>retaining at least two software reader applications to ensure the PDF/A-3 and XML files can be viewed in the future</t>
   <t>partnering with other digital archives around the world to mirror copies of the target data</t>
 </list></t>
 
 <t>In order to control costs and focus the archiving effort on the entire content of an RFC, including the metadata and other features embedded within each RFC published in more than just plain text, printing each RFC upon publication to paper is no longer reasonable.  Proper data storage and mirrored copies of RFCs provides more efficient and effective copies in case of catastrophic failure of the existing archive of material.</t>
 
-<t>Preservation efforts will reviewed and validated through a bi-annual audit that will verify that the targeted content and all its associated metadata can be read with existing tools.  The full process from acquisition to ingest will be reviewed to ensure that best current practice is being followed from a digital archive community perspective.  Since the overall model for the RFC Editor-maintained digital archive follows the OAIS Reference model, the associated audit guidelines should be followed.  While the RFC Editor does not seek to be recognized as 'OAIS-compliant' at this time, use of the ISO standard, "Audit and Certification of Trustworthy Digital Repositories," would provide a solid, accepted method for structuring an audit for this digital archive <xref target="ISO16363"/>.  </t>
+<t>Preservation efforts should be reviewed and validated through a bi-annual audit that will verify that the targeted content and all its associated metadata can be read with existing tools.  The full process from acquisition to ingest should be reviewed to ensure that best current practice is being followed from a digital archive community perspective.  Since the overall model for the RFC Editor-maintained digital archive follows the OAIS Reference model, the associated audit guidelines should be followed.  While the RFC Editor does not seek to be recognized as 'OAIS-compliant' at this time, use of the ISO standard, "Audit and Certification of Trustworthy Digital Repositories," would provide a solid, accepted method for structuring an audit for this digital archive <xref target="ISO16363"/>.  </t>
 
 </section>
 <section anchor="summary" title="Summary">
@@ -296,7 +297,14 @@
 
 <section anchor="change-log" title="Draft Change Log">
 <t>To be removed before publication</t>
-
+<section anchor="changes3" title="-02 to -03">
+<t>Life Cycle of Digital Preservation: modified language to be more clear as to when the archival process becomes more complex</t>
+<t>Recommendations: added that the final XML file should be one of the items retained in an archive</t>
+</section>
+<section anchor="changes2" title="-01 to -02">
+<t>Updated text where appropriate to indicate approved I-Ds should also be targeted for archiving
+</t>
+</section>
 <section anchor="changes1" title="-00 to -01">
 <t>Recommendations: added the requirement to archive reader software, and to stop printing out to paper</t>
 </section>
@@ -309,23 +317,7 @@
 
 
     <references title='Informative References'>
-
-<reference anchor="draft-hansen-rfc-use-of-pdf" >
-  <front>
-    <title>PDF for an RFC Series Output Document Format</title>
-    <author initials="T." surname="Hansen" fullname="Tony Hansen">
-      <organization></organization>
-    </author>
-    <author initials="L." surname="Masinter" fullname="Larry Masinter">
-      <organization></organization>
-    </author>
-    <author initials="M." surname="Hardy" fullname="Matthew Hardy">
-      <organization></organization>
-    </author>
-    <date year="2014" month="July"/>
-  </front>
-  <seriesInfo name="draft-hansen-rfc-use-of-pdf-02" value=""/>
-</reference>
+&I-D.hansen-rfc-use-of-pdf;
 <reference anchor="DPC" target="http://www.dpconline.org/advice/preservationhandbook">
   <front>
     <title>Digital Preservation Handbook</title>
